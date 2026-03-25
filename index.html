@@ -704,6 +704,198 @@
       color: var(--gold) !important;
     }
 
+    /* ─── Appendix Sections ─── */
+    .appendix-page {
+      padding: 80px 0 60px;
+      border-top: 3px solid var(--gold);
+      margin-top: 40px;
+    }
+
+    .appendix-label {
+      font-family: var(--display);
+      font-size: 14px;
+      color: var(--gold);
+      letter-spacing: 6px;
+      text-transform: uppercase;
+      text-align: center;
+      display: block;
+      margin-bottom: 6px;
+    }
+
+    .appendix-intro {
+      text-align: center;
+      color: var(--warm-gray);
+      font-size: 16px;
+      line-height: 1.7;
+      max-width: 700px;
+      margin: 0 auto 36px;
+      padding: 0 20px;
+    }
+
+    .appendix-body {
+      margin-top: 36px;
+    }
+
+    /* Cross-Reference Index */
+    .xref-topic {
+      margin-bottom: 28px;
+      padding-bottom: 20px;
+      border-bottom: 1px solid var(--rule-color);
+    }
+
+    .xref-topic:last-child {
+      border-bottom: none;
+    }
+
+    .xref-topic-heading {
+      font-family: var(--display);
+      font-size: 19px;
+      font-weight: 700;
+      color: var(--indigo);
+      border-bottom: 2px solid var(--gold);
+      padding-bottom: 4px;
+      margin-bottom: 10px;
+      display: inline-block;
+    }
+
+    .xref-entries {
+      margin-left: 20px;
+    }
+
+    .xref-entry {
+      margin-bottom: 6px;
+      font-size: 16px;
+      line-height: 1.5;
+    }
+
+    .xref-location {
+      color: var(--indigo);
+      font-weight: 600;
+    }
+
+    .xref-chapter-title {
+      color: var(--warm-gray);
+      font-style: italic;
+    }
+
+    .xref-snippets {
+      margin-left: 16px;
+      margin-top: 2px;
+    }
+
+    .xref-snippet-item {
+      font-size: 15px;
+      color: var(--body-color);
+      margin-bottom: 2px;
+    }
+
+    .xref-snippet-item::before {
+      content: "·";
+      color: var(--gold);
+      margin-right: 6px;
+    }
+
+    /* Practice Quick-Reference */
+    .pqr-category {
+      margin-bottom: 32px;
+    }
+
+    .pqr-category-heading {
+      font-family: var(--display);
+      font-size: 16px;
+      font-weight: 700;
+      color: var(--gold);
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      border-bottom: 1px solid var(--rule-color);
+      padding-bottom: 6px;
+      margin-bottom: 14px;
+    }
+
+    .pqr-practice {
+      margin-bottom: 14px;
+      padding-left: 16px;
+      border-left: 2px solid rgba(196,163,90,0.3);
+    }
+
+    .pqr-practice-name {
+      font-family: var(--display);
+      font-size: 17px;
+      font-weight: 700;
+      color: var(--indigo);
+      margin-bottom: 2px;
+    }
+
+    .pqr-description {
+      font-size: 15px;
+      color: var(--body-color);
+      line-height: 1.6;
+      margin-bottom: 3px;
+    }
+
+    .pqr-meta {
+      font-family: var(--display);
+      font-size: 14px;
+      font-style: italic;
+      color: var(--gold);
+    }
+
+    /* Class Schedule Table */
+    .schedule-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 8px;
+      font-size: 15px;
+    }
+
+    .schedule-table th {
+      font-family: var(--display);
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--indigo);
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      border-bottom: 2px solid var(--gold);
+      padding: 8px 12px;
+      text-align: left;
+      background: rgba(196,163,90,0.06);
+    }
+
+    .schedule-table td {
+      padding: 7px 12px;
+      border-bottom: 1px solid var(--rule-color);
+      vertical-align: top;
+      color: var(--body-color);
+      line-height: 1.5;
+    }
+
+    .schedule-table tr:last-child td {
+      border-bottom: none;
+    }
+
+    .schedule-table .session-num {
+      font-weight: 600;
+      color: var(--gold);
+      white-space: nowrap;
+    }
+
+    .schedule-table .part-tag {
+      font-family: var(--display);
+      font-size: 12px;
+      font-weight: 700;
+      color: white;
+      background: var(--indigo);
+      padding: 1px 6px;
+      border-radius: 3px;
+      white-space: nowrap;
+      display: inline-block;
+    }
+
+    .schedule-table .instructor-cell {
+      font-style: italic;
+      color: var(--warm-gray);
+    }
+
     /* ─── Back to top ─── */
     .back-to-top {
       position: fixed;
@@ -950,7 +1142,11 @@
       </div>
     </div>
         <div class="nav-front-links" style="border-top: 1px solid var(--rule-color); border-bottom: none; margin-top: 8px; padding-top: 12px;">
-          <a href="#colophon">Colophon</a>
+          <div style="font-family: var(--display); font-size: 11px; font-weight: 700; color: var(--gold); letter-spacing: 2px; text-transform: uppercase; padding: 4px 12px 6px; opacity: 0.8;">Back Matter</div>
+          <a href="#appendix-a">Appendix A — Class Schedule</a>
+          <a href="#appendix-b">Appendix B — Cross-Reference Index</a>
+          <a href="#appendix-c">Appendix C — Practice Quick-Reference</a>
+          <a href="#colophon">Appendix D — Colophon</a>
         </div>
       </nav>
     </aside>
@@ -8488,7 +8684,1179 @@
     <div class="chapter-closing">✿ ✿ ✿</div>
   </div>
 </section>
+<section id="appendix-b" class="appendix-page">
+  <span class="appendix-label">Appendix B</span>
+  <h2 class="section-title">CROSS-REFERENCE INDEX</h2>
+  <div class="gold-rule"></div>
+  <p class="appendix-intro">This index maps key topics across all three Parts, so you can find every teaching on a given subject regardless of which instructor presented it.</p>
+  <div class="appendix-body">
+    <div class="xref-topic">
+      <div class="xref-topic-heading">Prayers — Saum</div>
+      <div class="xref-entries">
+        <div class="xref-entry">
+          <span class="xref-location">Part I, Ch. 1</span> — <span class="xref-chapter-title">Prayers &amp; Invocations</span>
+          <div class="xref-snippets">
+            <div class="xref-snippet-item">Saum and Salat — The Two Daily Prayers</div>
+            <div class="xref-snippet-item">Saum — Prayer of Repose (full text + line-by-line commentary)</div>
+            <div class="xref-snippet-item">Saum and Salat — The Two Daily Prayers of Suluk</div>
+            <div class="xref-snippet-item">Saum Prayer Movement Instructions (with Qalb/Ruh/Khafi/Nafs connections)</div>
+          </div>
+        </div>
+        <div class="xref-entry">
+          <span class="xref-location">Part II, Ch. 1</span> — <span class="xref-chapter-title">Prayers &amp; Invocations</span>
+          <div class="xref-snippets">
+            <div class="xref-snippet-item">Salat — Full Prostration Teaching (new: heart higher than brain position)</div>
+          </div>
+        </div>
+        <div class="xref-entry">
+          <span class="xref-location">Part III, Ch. 1</span> — <span class="xref-chapter-title">Prayers &amp; Invocations</span>
+          <div class="xref-snippets">
+            <div class="xref-snippet-item">Daily Practice Sequence — Saum listed as opening daily practice</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="xref-topic">
+      <div class="xref-topic-heading">Prayers — Salat / Salawat</div>
+      <div class="xref-entries">
+        <div class="xref-entry">
+          <span class="xref-location">Part I, Ch. 1</span> — <span class="xref-chapter-title">Prayers &amp; Invocations</span>
+          <div class="xref-snippets">
+            <div class="xref-snippet-item">Salat — Prayer of Benediction (full text + Divan/syzygy teaching)</div>
+            <div class="xref-snippet-item">Salawat — The Complete Form (gender-inclusive, all traditions listed)</div>
+            <div class="xref-snippet-item">Saum and Salat — The Two Daily Prayers</div>
+          </div>
+        </div>
+        <div class="xref-entry">
+          <span class="xref-location">Part II, Ch. 1</span> — <span class="xref-chapter-title">Prayers &amp; Invocations</span>
+          <div class="xref-snippets">
+            <div class="xref-snippet-item">Salawat — The Complete Form (variant closing: &#x27;Seer, Aaron, Miriam and Moses&#x27;)</div>
+            <div class="xref-snippet-item">Salat — Full Prostration Teaching (new prostration form taught)</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="xref-topic">
+      <div class="xref-topic-heading">Prayers — Invocation (Nayaz)</div>
+      <div class="xref-entries">
+        <div class="xref-entry">
+          <span class="xref-location">Part I, Ch. 1</span> — <span class="xref-chapter-title">Prayers &amp; Invocations</span>
+          <div class="xref-snippets">
+            <div class="xref-snippet-item">The Invocation (extended teaching on each phrase)</div>
+            <div class="xref-snippet-item">Amān — The Opening Prayer of Each Suluk Day</div>
+          </div>
+        </div>
+        <div class="xref-entry">
+          <span class="xref-location">Part I, Ch. 6</span> — <span class="xref-chapter-title">Teachings &amp; Wisdom</span>
+          <div class="xref-snippets">
+            <div class="xref-snippet-item">Amān — The Opening Prayer of Each Suluk Day</div>
+            <div class="xref-snippet-item">Sleep and Waking Practices — say Invocation on waking</div>
+          </div>
+        </div>
+        <div class="xref-entry">
+          <span class="xref-location">Part II, Ch. 1</span> — <span class="xref-chapter-title">Prayers &amp; Invocations</span>
+          <div class="xref-snippets">
+            <div class="xref-snippet-item">The Invocation (Nayaz) — Opening Prayer (full text)</div>
+          </div>
+        </div>
+        <div class="xref-entry">
+          <span class="xref-location">Part III, Ch. 1</span> — <span class="xref-chapter-title">Prayers &amp; Invocations</span>
+          <div class="xref-snippets">
+            <div class="xref-snippet-item">Invocation — The Inner State of Longing (bring longing, not just words)</div>
+          </div>
+        </div>
+        <div class="xref-entry">
+          <span class="xref-location">Part III, Ch. 5</span> — <span class="xref-chapter-title">Teachings &amp; Wisdom</span>
+          <div class="xref-snippets">
+            <div class="xref-snippet-item">Daily Practice Sequence — Invocation listed as morning practice</div>
+            <div class="xref-snippet-item">Guide Session Dec 2025 — &#x27;Fresh meaning each time&#x27;</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="xref-topic">
+      <div class="xref-topic-heading">Prayers — Khatum</div>
+      <div class="xref-entries">
+        <div class="xref-entry">
+          <span class="xref-location">Part I, Ch. 1</span> — <span class="xref-chapter-title">Prayers &amp; Invocations</span>
+          <div class="xref-snippets">
+            <div class="xref-snippet-item">Khatum — The Closing Prayer (full text)</div>
+          </div>
+        </div>
+        <div class="xref-entry">
+          <span class="xref-location">Part II, Ch. 1</span> — <span class="xref-chapter-title">Prayers &amp; Invocations</span>
+          <div class="xref-snippets">
+            <div class="xref-snippet-item">Salawat — The Complete Form (Khatum included in closing prayer sequence)</div>
+          </div>
+        </div>
+        <div class="xref-entry">
+          <span class="xref-location">Part III, Ch. 1</span> — <span class="xref-chapter-title">Prayers &amp; Invocations</span>
+          <div class="xref-snippets">
+            <div class="xref-snippet-item">Khatum — The Closing Prayer (Mansur&#x27;s personal sessions)</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="xref-topic">
+      <div class="xref-topic-heading">Prayers — Aman / Amān</div>
+      <div class="xref-entries">
+        <div class="xref-entry">
+          <span class="xref-location">Part I, Ch. 1</span> — <span class="xref-chapter-title">Prayers &amp; Invocations</span>
+          <div class="xref-snippets">
+            <div class="xref-snippet-item">Amān — The Prayer of Sanctuary (teaching: not in 99 Names; for extreme suffering)</div>
+            <div class="xref-snippet-item">The Amen Gesture — Physical Cascade Practice (Amen/Amān shared root)</div>
+          </div>
+        </div>
+        <div class="xref-entry">
+          <span class="xref-location">Part I, Ch. 6</span> — <span class="xref-chapter-title">Teachings &amp; Wisdom</span>
+          <div class="xref-snippets">
+            <div class="xref-snippet-item">Amān — The Opening Prayer of Each Suluk Day (context of Mount Qaf story)</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="xref-topic">
+      <div class="xref-topic-heading">Prayers — Nayaz (Elemental Purification Prayer)</div>
+      <div class="xref-entries">
+        <div class="xref-entry">
+          <span class="xref-location">Part II, Ch. 1</span> — <span class="xref-chapter-title">Prayers &amp; Invocations</span>
+          <div class="xref-snippets">
+            <div class="xref-snippet-item">Elemental Purification Prayer (after water breath practice)</div>
+            <div class="xref-snippet-item">Nayaz — Prayer of Gratitude (Cloak-Releasing Gesture + Nayaz text)</div>
+          </div>
+        </div>
+        <div class="xref-entry">
+          <span class="xref-location">Part III, Ch. 2</span> — <span class="xref-chapter-title">Breath Practices</span>
+          <div class="xref-snippets">
+            <div class="xref-snippet-item">Five Elemental Purification Breaths — Prayer of Niyaz as closing</div>
+            <div class="xref-snippet-item">Guide Session Dec 2025 — full Niyaz text given as closing to Ether breath</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="xref-topic">
+      <div class="xref-topic-heading">Breath Practices — General / Foundational</div>
+      <div class="xref-entries">
+        <div class="xref-entry">
+          <span class="xref-location">Part I, Ch. 3</span> — <span class="xref-chapter-title">Breath Practices</span>
+          <div class="xref-snippets">
+            <div class="xref-snippet-item">Rightful Breathing Practice</div>
+            <div class="xref-snippet-item">The Invisible Rain — Full Body Breath Practice</div>
+            <div class="xref-snippet-item">Purification Breathing Practice with Emotional Stages</div>
+            <div class="xref-snippet-item">Five Aspects of Breath — Complete Review</div>
+          </div>
+        </div>
+        <div class="xref-entry">
+          <span class="xref-location">Part I, Ch. 4</span> — <span class="xref-chapter-title">Concentration, Visualization &amp; Meditation</span>
+          <div class="xref-snippets">
+            <div class="xref-snippet-item">Breath Visualization Through Soles of Feet</div>
+            <div class="xref-snippet-item">Light &amp; Breath Practice — The Orb / Auric Body</div>
+          </div>
+        </div>
+        <div class="xref-entry">
+          <span class="xref-location">Part I, Ch. 5</span> — <span class="xref-chapter-title">Movements, Rituals &amp; Techniques</span>
+          <div class="xref-snippets">
+            <div class="xref-snippet-item">Sleep and Waking Practices — Nostril and Threshold Work</div>
+            <div class="xref-snippet-item">The Swing of Breath — Ha Practice</div>
+          </div>
+        </div>
+        <div class="xref-entry">
+          <span class="xref-location">Part I, Ch. 6</span> — <span class="xref-chapter-title">Teachings &amp; Wisdom</span>
+          <div class="xref-snippets">
+            <div class="xref-snippet-item">Murshid&#x27;s Complete Teaching on Breath — The Secret of Both Worlds</div>
+            <div class="xref-snippet-item">Murshid&#x27;s Teaching on Breath as Life and Light</div>
+          </div>
+        </div>
+        <div class="xref-entry">
+          <span class="xref-location">Part III, Ch. 2</span> — <span class="xref-chapter-title">Breath Practices</span>
+          <div class="xref-snippets">
+            <div class="xref-snippet-item">Hosh dar Dam — Breath Awareness (life practice, not just sitting)</div>
+            <div class="xref-snippet-item">Purification Breath Health Testimony (Pir Vilayat: never seriously ill)</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="xref-topic">
+      <div class="xref-topic-heading">Breath Practices — Elemental (Earth, Water, Fire, Air, Ether)</div>
+      <div class="xref-entries">
+        <div class="xref-entry">
+          <span class="xref-location">Part I, Ch. 3</span> — <span class="xref-chapter-title">Breath Practices</span>
+          <div class="xref-snippets">
+            <div class="xref-snippet-item">The Elemental Purification Ritual (Earth burial, Water pouring, Fire burning, Air release)</div>
+          </div>
+        </div>
+        <div class="xref-entry">
+          <span class="xref-location">Part II, Ch. 3</span> — <span class="xref-chapter-title">Breath Practices</span>
+          <div class="xref-snippets">
+            <div class="xref-snippet-item">Five Element Breathing Practice — Foundation (Earth/Water/Fire/Air/Ether with breath patterns)</div>
+            <div class="xref-snippet-item">Earth Element Extended Practice — Three Layers (purification, horizontal direction, yellow/ocher)</div>
+            <div class="xref-snippet-item">Water Elemental Breath Practice — Complete (waterfall visualization, green color, downward)</div>
+            <div class="xref-snippet-item">Three Element Breath Sequence — Complete (Earth+Water+Fire all in one session)</div>
+          </div>
+        </div>
+        <div class="xref-entry">
+          <span class="xref-location">Part III, Ch. 2</span> — <span class="xref-chapter-title">Breath Practices</span>
+          <div class="xref-snippets">
+            <div class="xref-snippet-item">Five Elemental Purification Breaths — Complete Instructions (Mansur version)</div>
+            <div class="xref-snippet-item">Elemental Breaths — Observed Benefits and Practice (7 rounds, medicine-like effect)</div>
+            <div class="xref-snippet-item">Practices &amp; Teachings Consolidated — full table of elements, patterns, directions, colors</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="xref-topic">
+      <div class="xref-topic-heading">Breath Practices — Qasab (Reed Breath / Alternate Nostril)</div>
+      <div class="xref-entries">
+        <div class="xref-entry">
+          <span class="xref-location">Part III, Ch. 2</span> — <span class="xref-chapter-title">Breath Practices</span>
+          <div class="xref-snippets">
+            <div class="xref-snippet-item">Qasab — The Reed Breath (9-step sequence, hand positions, HU on retention)</div>
+            <div class="xref-snippet-item">Guide Session March 2026 — Qasab with Breath Retention (4:8:4 ratio)</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="xref-topic">
+      <div class="xref-topic-heading">Color Concentration Practices</div>
+      <div class="xref-entries">
+        <div class="xref-entry">
+          <span class="xref-location">Part I, Ch. 4</span> — <span class="xref-chapter-title">Concentration, Visualization &amp; Meditation</span>
+          <div class="xref-snippets">
+            <div class="xref-snippet-item">Color Black Concentration Practice</div>
+            <div class="xref-snippet-item">Color Visualization: Black</div>
+            <div class="xref-snippet-item">Color Visualization Practice — White</div>
+            <div class="xref-snippet-item">Color Visualization: Yellow — Alchemical Sequence (black→white→yellow)</div>
+          </div>
+        </div>
+        <div class="xref-entry">
+          <span class="xref-location">Part II, Ch. 4</span> — <span class="xref-chapter-title">Concentration, Visualization &amp; Meditation</span>
+          <div class="xref-snippets">
+            <div class="xref-snippet-item">Color Concentration Practice — Brown to Green</div>
+            <div class="xref-snippet-item">Color Concentration — Green to Orange</div>
+            <div class="xref-snippet-item">Final Color Concentration — Orange to Gold (full arc: orange→red→purple→gold)</div>
+            <div class="xref-snippet-item">Elements Mapped to Stages of Concentration (each element = a color)</div>
+          </div>
+        </div>
+        <div class="xref-entry">
+          <span class="xref-location">Part II, Ch. 3</span> — <span class="xref-chapter-title">Breath Practices</span>
+          <div class="xref-snippets">
+            <div class="xref-snippet-item">Earth = yellow/ocher</div>
+            <div class="xref-snippet-item">Water = green</div>
+            <div class="xref-snippet-item">Fire = red (belly) → pure light</div>
+            <div class="xref-snippet-item">Air = blue</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="xref-topic">
+      <div class="xref-topic-heading">Elements — Earth</div>
+      <div class="xref-entries">
+        <div class="xref-entry">
+          <span class="xref-location">Part I, Ch. 3</span> — <span class="xref-chapter-title">Breath Practices</span>
+          <div class="xref-snippets">
+            <div class="xref-snippet-item">Elemental Purification Ritual — Earth: burial in soil</div>
+          </div>
+        </div>
+        <div class="xref-entry">
+          <span class="xref-location">Part I, Ch. 4</span> — <span class="xref-chapter-title">Concentration, Visualization &amp; Meditation</span>
+          <div class="xref-snippets">
+            <div class="xref-snippet-item">Sensory Exercise: Smell (Fire Element) — elemental sequence touch=earth, taste=water, smell=fire</div>
+          </div>
+        </div>
+        <div class="xref-entry">
+          <span class="xref-location">Part II, Ch. 3</span> — <span class="xref-chapter-title">Breath Practices</span>
+          <div class="xref-snippets">
+            <div class="xref-snippet-item">Five Element Breathing Practice — Foundation</div>
+            <div class="xref-snippet-item">Earth Element Extended Practice — Three Layers</div>
+            <div class="xref-snippet-item">Three Element Breath Sequence</div>
+            <div class="xref-snippet-item">Complete Four-Element Breath Practice</div>
+          </div>
+        </div>
+        <div class="xref-entry">
+          <span class="xref-location">Part II, Ch. 6</span> — <span class="xref-chapter-title">Movements, Rituals &amp; Techniques</span>
+          <div class="xref-snippets">
+            <div class="xref-snippet-item">Earth Practice: Eshk — Communion with Earth (barefoot, each step a kiss)</div>
+          </div>
+        </div>
+        <div class="xref-entry">
+          <span class="xref-location">Part II, Ch. 7</span> — <span class="xref-chapter-title">Teachings &amp; Wisdom</span>
+          <div class="xref-snippets">
+            <div class="xref-snippet-item">Earth Element Teaching — Outer and Inner Dimensions</div>
+            <div class="xref-snippet-item">Murshid on Earth Personality Type</div>
+          </div>
+        </div>
+        <div class="xref-entry">
+          <span class="xref-location">Part III, Ch. 2</span> — <span class="xref-chapter-title">Breath Practices</span>
+          <div class="xref-snippets">
+            <div class="xref-snippet-item">Five Elemental Purification Breaths — Earth: mountain visualization, horizontal, gold wheat</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="xref-topic">
+      <div class="xref-topic-heading">Elements — Water</div>
+      <div class="xref-entries">
+        <div class="xref-entry">
+          <span class="xref-location">Part I, Ch. 3</span> — <span class="xref-chapter-title">Breath Practices</span>
+          <div class="xref-snippets">
+            <div class="xref-snippet-item">Elemental Purification Ritual — Water: pouring into stream or ocean</div>
+            <div class="xref-snippet-item">The Invisible Rain — Full Body Breath Practice (breath shares water qualities)</div>
+          </div>
+        </div>
+        <div class="xref-entry">
+          <span class="xref-location">Part II, Ch. 3</span> — <span class="xref-chapter-title">Breath Practices</span>
+          <div class="xref-snippets">
+            <div class="xref-snippet-item">Water Elemental Breath Practice — Complete (waterfall, green, downward)</div>
+          </div>
+        </div>
+        <div class="xref-entry">
+          <span class="xref-location">Part II, Ch. 4</span> — <span class="xref-chapter-title">Concentration, Visualization &amp; Meditation</span>
+          <div class="xref-snippets">
+            <div class="xref-snippet-item">Feeling the Pulse — Water Element Inner Awareness</div>
+            <div class="xref-snippet-item">River Visualization Practice</div>
+          </div>
+        </div>
+        <div class="xref-entry">
+          <span class="xref-location">Part III, Ch. 2</span> — <span class="xref-chapter-title">Breath Practices</span>
+          <div class="xref-snippets">
+            <div class="xref-snippet-item">Five Elemental Purification Breaths — Water: waterfall, sea green, descending</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="xref-topic">
+      <div class="xref-topic-heading">Elements — Fire</div>
+      <div class="xref-entries">
+        <div class="xref-entry">
+          <span class="xref-location">Part I, Ch. 3</span> — <span class="xref-chapter-title">Breath Practices</span>
+          <div class="xref-snippets">
+            <div class="xref-snippet-item">Elemental Purification Ritual — Fire: burning paper inscription</div>
+          </div>
+        </div>
+        <div class="xref-entry">
+          <span class="xref-location">Part I, Ch. 4</span> — <span class="xref-chapter-title">Concentration, Visualization &amp; Meditation</span>
+          <div class="xref-snippets">
+            <div class="xref-snippet-item">Sensory Exercise: Smell — Fire element (subtlest of first three senses)</div>
+          </div>
+        </div>
+        <div class="xref-entry">
+          <span class="xref-location">Part II, Ch. 3</span> — <span class="xref-chapter-title">Breath Practices</span>
+          <div class="xref-snippets">
+            <div class="xref-snippet-item">Three Element Breath Sequence — Fire (belly coals, ascending, red→pure light)</div>
+          </div>
+        </div>
+        <div class="xref-entry">
+          <span class="xref-location">Part II, Ch. 4</span> — <span class="xref-chapter-title">Concentration, Visualization &amp; Meditation</span>
+          <div class="xref-snippets">
+            <div class="xref-snippet-item">Burning Torch Concentration Practice</div>
+          </div>
+        </div>
+        <div class="xref-entry">
+          <span class="xref-location">Part III, Ch. 2</span> — <span class="xref-chapter-title">Breath Practices</span>
+          <div class="xref-snippets">
+            <div class="xref-snippet-item">Five Elemental Purification Breaths — Fire: glowing coals, rising, red</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="xref-topic">
+      <div class="xref-topic-heading">Elements — Air</div>
+      <div class="xref-entries">
+        <div class="xref-entry">
+          <span class="xref-location">Part I, Ch. 3</span> — <span class="xref-chapter-title">Breath Practices</span>
+          <div class="xref-snippets">
+            <div class="xref-snippet-item">Elemental Purification Ritual — Air: release into wind</div>
+          </div>
+        </div>
+        <div class="xref-entry">
+          <span class="xref-location">Part II, Ch. 3</span> — <span class="xref-chapter-title">Breath Practices</span>
+          <div class="xref-snippets">
+            <div class="xref-snippet-item">Complete Four-Element Breath Practice — Air (zigzag, mouth→mouth, blue)</div>
+          </div>
+        </div>
+        <div class="xref-entry">
+          <span class="xref-location">Part III, Ch. 2</span> — <span class="xref-chapter-title">Breath Practices</span>
+          <div class="xref-snippets">
+            <div class="xref-snippet-item">Five Elemental Purification Breaths — Air: swirling wind, zigzag, sky blue</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="xref-topic">
+      <div class="xref-topic-heading">Elements — Ether / Akasha</div>
+      <div class="xref-entries">
+        <div class="xref-entry">
+          <span class="xref-location">Part II, Ch. 3</span> — <span class="xref-chapter-title">Breath Practices</span>
+          <div class="xref-snippets">
+            <div class="xref-snippet-item">Complete Five-Element Breath Practice with Ether (no direction, no color, three planes of ether)</div>
+          </div>
+        </div>
+        <div class="xref-entry">
+          <span class="xref-location">Part II, Ch. 4</span> — <span class="xref-chapter-title">Concentration, Visualization &amp; Meditation</span>
+          <div class="xref-snippets">
+            <div class="xref-snippet-item">Elements Mapped to Stages of Concentration — Ether = Union, no subject/object</div>
+          </div>
+        </div>
+        <div class="xref-entry">
+          <span class="xref-location">Part III, Ch. 2</span> — <span class="xref-chapter-title">Breath Practices</span>
+          <div class="xref-snippets">
+            <div class="xref-snippet-item">Five Elemental Purification Breaths — Ether: all-pervading life in space, grey mist, letting go</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="xref-topic">
+      <div class="xref-topic-heading">Fikr, Zikr &amp; Wazifa</div>
+      <div class="xref-entries">
+        <div class="xref-entry">
+          <span class="xref-location">Part II, Ch. 5</span> — <span class="xref-chapter-title">Fikr, Zikr &amp; Wazifa</span>
+          <div class="xref-snippets">
+            <div class="xref-snippet-item">Ashukrillah — Zikr of Gratitude (Thanks be to the One)</div>
+            <div class="xref-snippet-item">Astaghfirullah Zikr Practice 33x (I seek forgiveness from God)</div>
+            <div class="xref-snippet-item">Doing Zikr as Murshid (Pir Vilayat teaching)</div>
+            <div class="xref-snippet-item">Sallallahu &#x27;Alaika Ya Rasul Allah Zikr (11 times in tone)</div>
+          </div>
+        </div>
+        <div class="xref-entry">
+          <span class="xref-location">Part III, Ch. 4</span> — <span class="xref-chapter-title">Fikr, Zikr &amp; Wazifa</span>
+          <div class="xref-snippets">
+            <div class="xref-snippet-item">Fikr — Ya Sabur-o / Ya Wahhab-o (First / Foundation Practice)</div>
+            <div class="xref-snippet-item">Fikr — Subuhun / Quddusun (Preparatory)</div>
+            <div class="xref-snippet-item">Fazl Mullah Rahim Allah — Blessing Invocation</div>
+            <div class="xref-snippet-item">Fikr — Ya Fazl / Ya Fattah (Current Leading Practice)</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="xref-topic">
+      <div class="xref-topic-heading">Concentration Exercises — Objects &amp; Visualization</div>
+      <div class="xref-entries">
+        <div class="xref-entry">
+          <span class="xref-location">Part I, Ch. 4</span> — <span class="xref-chapter-title">Concentration, Visualization &amp; Meditation</span>
+          <div class="xref-snippets">
+            <div class="xref-snippet-item">Color Black / White / Yellow / Red / Blue concentration</div>
+            <div class="xref-snippet-item">Gemstone Concentration Practice (sapphire, diamond, topaz)</div>
+            <div class="xref-snippet-item">Sandpaper Touch Concentration</div>
+            <div class="xref-snippet-item">Flower Concentration Practice (Jamali)</div>
+          </div>
+        </div>
+        <div class="xref-entry">
+          <span class="xref-location">Part II, Ch. 4</span> — <span class="xref-chapter-title">Concentration, Visualization &amp; Meditation</span>
+          <div class="xref-snippets">
+            <div class="xref-snippet-item">Visualizing an Inspiring Being Practice</div>
+            <div class="xref-snippet-item">Tailbone Concentration Practice</div>
+            <div class="xref-snippet-item">Three-Stage Being Visualization</div>
+            <div class="xref-snippet-item">Burning Torch Concentration Practice</div>
+          </div>
+        </div>
+        <div class="xref-entry">
+          <span class="xref-location">Part III, Ch. 3</span> — <span class="xref-chapter-title">Concentration, Visualization &amp; Meditation</span>
+          <div class="xref-snippets">
+            <div class="xref-snippet-item">Ideal Guru Contemplation</div>
+            <div class="xref-snippet-item">Muraqabah — Watchfulness of Thought</div>
+            <div class="xref-snippet-item">Sky of Mind Practice — Full Five-Stage Practice</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="xref-topic">
+      <div class="xref-topic-heading">The Guide / Murshid Relationship</div>
+      <div class="xref-entries">
+        <div class="xref-entry">
+          <span class="xref-location">Part I, Ch. 6</span> — <span class="xref-chapter-title">Teachings &amp; Wisdom</span>
+          <div class="xref-snippets">
+            <div class="xref-snippet-item">Heart-to-Heart Teaching Story — Hazrat Inayat Khan and His Murshid</div>
+            <div class="xref-snippet-item">The Rabita — Heart to Heart Connection</div>
+            <div class="xref-snippet-item">The Spirit of Guidance and Cosmic Being</div>
+          </div>
+        </div>
+        <div class="xref-entry">
+          <span class="xref-location">Part II, Ch. 4</span> — <span class="xref-chapter-title">Concentration, Visualization &amp; Meditation</span>
+          <div class="xref-snippets">
+            <div class="xref-snippet-item">Fana-fi-Sheikh — Three Stages Practice (Image → Atmosphere → Merging)</div>
+            <div class="xref-snippet-item">Fana Sequence — The Complete Arc (Fana-fi-Sheikh → Fana-fi-Rasul → Fana-fi-Allah)</div>
+          </div>
+        </div>
+        <div class="xref-entry">
+          <span class="xref-location">Part II, Ch. 5</span> — <span class="xref-chapter-title">Fikr, Zikr &amp; Wazifa</span>
+          <div class="xref-snippets">
+            <div class="xref-snippet-item">Doing Zikr as Murshid (Pir Vilayat instruction)</div>
+          </div>
+        </div>
+        <div class="xref-entry">
+          <span class="xref-location">Part III, Ch. 3</span> — <span class="xref-chapter-title">Concentration, Visualization &amp; Meditation</span>
+          <div class="xref-snippets">
+            <div class="xref-snippet-item">Ideal Guru Contemplation (hold Pir Zia as archetype)</div>
+          </div>
+        </div>
+        <div class="xref-entry">
+          <span class="xref-location">Part III, Ch. 5</span> — <span class="xref-chapter-title">Teachings &amp; Wisdom</span>
+          <div class="xref-snippets">
+            <div class="xref-snippet-item">Guide Session Dec 2025 — full session with Mansur</div>
+            <div class="xref-snippet-item">Guide Session March 2026 — Monthly ReBoot</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="xref-topic">
+      <div class="xref-topic-heading">Surrender, Ego, and Nafs</div>
+      <div class="xref-entries">
+        <div class="xref-entry">
+          <span class="xref-location">Part I, Ch. 1</span> — <span class="xref-chapter-title">Prayers &amp; Invocations</span>
+          <div class="xref-snippets">
+            <div class="xref-snippet-item">Saum — &#x27;To Thee do we give willing surrender&#x27; (surrender to beauty vs. power)</div>
+          </div>
+        </div>
+        <div class="xref-entry">
+          <span class="xref-location">Part I, Ch. 4</span> — <span class="xref-chapter-title">Concentration, Visualization &amp; Meditation</span>
+          <div class="xref-snippets">
+            <div class="xref-snippet-item">Avoiding the Word &#x27;I&#x27; — 24 Hour Practice (what is this &#x27;I&#x27;?)</div>
+          </div>
+        </div>
+        <div class="xref-entry">
+          <span class="xref-location">Part I, Ch. 6</span> — <span class="xref-chapter-title">Teachings &amp; Wisdom</span>
+          <div class="xref-snippets">
+            <div class="xref-snippet-item">The Suluk Journey — Path of Recollection and Unity</div>
+          </div>
+        </div>
+        <div class="xref-entry">
+          <span class="xref-location">Part II, Ch. 2</span> — <span class="xref-chapter-title">Chivalric Rules &amp; Iron Rules</span>
+          <div class="xref-snippets">
+            <div class="xref-snippet-item">Final Iron Rule — Harm No One for Your Own Benefit (Nafs al-Ammara vs Nafs al-Lawwama)</div>
+          </div>
+        </div>
+        <div class="xref-entry">
+          <span class="xref-location">Part III, Ch. 5</span> — <span class="xref-chapter-title">Teachings &amp; Wisdom</span>
+          <div class="xref-snippets">
+            <div class="xref-snippet-item">Ego, Patience, and the Jihad with the False Self</div>
+            <div class="xref-snippet-item">Guide Session March 2026 — ego pushback, building the spiritual locomotive</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="xref-topic">
+      <div class="xref-topic-heading">Stories and Parables</div>
+      <div class="xref-entries">
+        <div class="xref-entry">
+          <span class="xref-location">Part I, Ch. 6</span> — <span class="xref-chapter-title">Teachings &amp; Wisdom</span>
+          <div class="xref-snippets">
+            <div class="xref-snippet-item">The Story of the Boy and the Alif — Quality Over Quantity</div>
+            <div class="xref-snippet-item">Heart-to-Heart Teaching Story — Hazrat Inayat Khan and His Murshid</div>
+            <div class="xref-snippet-item">Jesus in Gethsemane — &#x27;Stay awake with me&#x27; (on attention)</div>
+            <div class="xref-snippet-item">Jesus on Sovereignty — &#x27;Each speaks what he owns&#x27;</div>
+          </div>
+        </div>
+        <div class="xref-entry">
+          <span class="xref-location">Part II, Ch. 4</span> — <span class="xref-chapter-title">Concentration, Visualization &amp; Meditation</span>
+          <div class="xref-snippets">
+            <div class="xref-snippet-item">Bridge from Concentration to Contemplation — references Boy and Alif story</div>
+            <div class="xref-snippet-item">Two Modes of Concentration — Hare vs Lion (Jataka tale)</div>
+          </div>
+        </div>
+        <div class="xref-entry">
+          <span class="xref-location">Part II, Ch. 4</span> — <span class="xref-chapter-title">Concentration, Visualization &amp; Meditation</span>
+          <div class="xref-snippets">
+            <div class="xref-snippet-item">Breath Still-Point Concentration — cobra magnetism story (Murshid)</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="xref-topic">
+      <div class="xref-topic-heading">Chivalric Rules / Iron Rules</div>
+      <div class="xref-entries">
+        <div class="xref-entry">
+          <span class="xref-location">Part I, Ch. 2</span> — <span class="xref-chapter-title">Chivalric Rules &amp; Iron Rules</span>
+          <div class="xref-snippets">
+            <div class="xref-snippet-item">Rule 1 — Make No False Claims</div>
+            <div class="xref-snippet-item">Iron Rule 2 — Speak Not Against Others in Their Absence</div>
+            <div class="xref-snippet-item">Iron Rule 3 — Do Not Take Advantage of Ignorance</div>
+            <div class="xref-snippet-item">Iron Rule 4 — Do Not Boast of Your Good Deeds</div>
+          </div>
+        </div>
+        <div class="xref-entry">
+          <span class="xref-location">Part II, Ch. 2</span> — <span class="xref-chapter-title">Chivalric Rules &amp; Iron Rules</span>
+          <div class="xref-snippets">
+            <div class="xref-snippet-item">Rule — Do Not Reproach Others</div>
+            <div class="xref-snippet-item">Rule — Do Not Spare Yourself in the Work You Must Accomplish</div>
+            <div class="xref-snippet-item">Rule — Render Your Services Faithfully</div>
+            <div class="xref-snippet-item">Rule — Seek Not Profit by Putting Someone in Straits</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="xref-topic">
+      <div class="xref-topic-heading">Arabic / Sufi Terms Glossaries</div>
+      <div class="xref-entries">
+        <div class="xref-entry">
+          <span class="xref-location">Part I, Ch. 6</span> — <span class="xref-chapter-title">Teachings &amp; Wisdom</span>
+          <div class="xref-snippets">
+            <div class="xref-snippet-item">Arabic &amp; Sufi Terms — Concentration P1 C1 (Suluk, Salik, Sohbet, Murshid, Murid, Saum, Salat, Alif, Khalwat dar Anjuman, Five Planes, Divan, Amān, Gayathri, Inayatiyya)</div>
+            <div class="xref-snippet-item">The Five Planes of Existence — Nasut, Malakut, Jabrut, Lahut, HaHut</div>
+          </div>
+        </div>
+        <div class="xref-entry">
+          <span class="xref-location">Part II, Ch. 5</span> — <span class="xref-chapter-title">Fikr, Zikr &amp; Wazifa</span>
+          <div class="xref-snippets">
+            <div class="xref-snippet-item">Eshk (عشق), Astaghfirullah, Ashukrillah, Itisal (اتصال)</div>
+            <div class="xref-snippet-item">Fana-fi-Sheikh, Fana-fi-Rasul, Fana-fi-Allah</div>
+            <div class="xref-snippet-item">Nafs al-Ammara, Nafs al-Lawwama</div>
+          </div>
+        </div>
+        <div class="xref-entry">
+          <span class="xref-location">Part III, Ch. 4</span> — <span class="xref-chapter-title">Fikr, Zikr &amp; Wazifa</span>
+          <div class="xref-snippets">
+            <div class="xref-snippet-item">Sabur, Wahhab, Subuhun, Quddusun, Fazl, Fattah (meanings given)</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="xref-topic">
+      <div class="xref-topic-heading">Geographical Orientation Practice</div>
+      <div class="xref-entries">
+        <div class="xref-entry">
+          <span class="xref-location">Part I, Ch. 4</span> — <span class="xref-chapter-title">Concentration, Visualization &amp; Meditation</span>
+          <div class="xref-snippets">
+            <div class="xref-snippet-item">Geographical Orientation — Daily Task (know directions for 24 hours without tech)</div>
+          </div>
+        </div>
+        <div class="xref-entry">
+          <span class="xref-location">Part II, Ch. 4</span> — <span class="xref-chapter-title">Concentration, Visualization &amp; Meditation</span>
+          <div class="xref-snippets">
+            <div class="xref-snippet-item">Geographical Orientation Practice (before elemental breath; east/west/north/south, mountains, rivers)</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="xref-topic">
+      <div class="xref-topic-heading">Body Awareness / Somatic Practices</div>
+      <div class="xref-entries">
+        <div class="xref-entry">
+          <span class="xref-location">Part I, Ch. 4</span> — <span class="xref-chapter-title">Concentration, Visualization &amp; Meditation</span>
+          <div class="xref-snippets">
+            <div class="xref-snippet-item">Standing Posture — Alif Position</div>
+            <div class="xref-snippet-item">Breath Visualization Through Soles of Feet</div>
+            <div class="xref-snippet-item">Sandpaper Touch Concentration</div>
+            <div class="xref-snippet-item">Tasting Practice with Cardamom Seed</div>
+          </div>
+        </div>
+        <div class="xref-entry">
+          <span class="xref-location">Part I, Ch. 5</span> — <span class="xref-chapter-title">Movements, Rituals &amp; Techniques</span>
+          <div class="xref-snippets">
+            <div class="xref-snippet-item">Ablutions — Ritual Purification Practice (body as five-pointed star)</div>
+            <div class="xref-snippet-item">Saum Prayer Movement Instructions</div>
+            <div class="xref-snippet-item">The Body as Temple — Opening Movement</div>
+          </div>
+        </div>
+        <div class="xref-entry">
+          <span class="xref-location">Part II, Ch. 4</span> — <span class="xref-chapter-title">Concentration, Visualization &amp; Meditation</span>
+          <div class="xref-snippets">
+            <div class="xref-snippet-item">Tailbone Concentration Practice</div>
+            <div class="xref-snippet-item">Energy Ball Practice</div>
+            <div class="xref-snippet-item">Skull Light Concentration — The Luminous Glance</div>
+            <div class="xref-snippet-item">Feeling the Pulse — Water Element Inner Awareness</div>
+          </div>
+        </div>
+        <div class="xref-entry">
+          <span class="xref-location">Part II, Ch. 6</span> — <span class="xref-chapter-title">Movements, Rituals &amp; Techniques</span>
+          <div class="xref-snippets">
+            <div class="xref-snippet-item">Four Seating Positions for Practice</div>
+            <div class="xref-snippet-item">Earth Practice: Eshk — Communion with Earth (barefoot)</div>
+            <div class="xref-snippet-item">Itisal — The Junction Practice (Ha × 11)</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="xref-topic">
+      <div class="xref-topic-heading">The Alif — Letter/Posture</div>
+      <div class="xref-entries">
+        <div class="xref-entry">
+          <span class="xref-location">Part I, Ch. 4</span> — <span class="xref-chapter-title">Concentration, Visualization &amp; Meditation</span>
+          <div class="xref-snippets">
+            <div class="xref-snippet-item">Standing Posture for Prayer — The Alif Position</div>
+          </div>
+        </div>
+        <div class="xref-entry">
+          <span class="xref-location">Part I, Ch. 6</span> — <span class="xref-chapter-title">Teachings &amp; Wisdom</span>
+          <div class="xref-snippets">
+            <div class="xref-snippet-item">The Standing Posture Before Prayer — Embodying the Alif</div>
+            <div class="xref-snippet-item">The Story of the Boy and the Alif — Quality Over Quantity</div>
+          </div>
+        </div>
+        <div class="xref-entry">
+          <span class="xref-location">Part II, Ch. 4</span> — <span class="xref-chapter-title">Concentration, Visualization &amp; Meditation</span>
+          <div class="xref-snippets">
+            <div class="xref-snippet-item">Bridge from Concentration to Contemplation — references Boy and Alif</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="xref-topic">
+      <div class="xref-topic-heading">Mount Qaf and the Five Planes</div>
+      <div class="xref-entries">
+        <div class="xref-entry">
+          <span class="xref-location">Part I, Ch. 6</span> — <span class="xref-chapter-title">Teachings &amp; Wisdom</span>
+          <div class="xref-snippets">
+            <div class="xref-snippet-item">Mount Qaf — The Spiritual Mountain and the Name of This Class</div>
+            <div class="xref-snippet-item">The Five Planes of Existence — Nasut, Malakut, Jabrut, Lahut, HaHut</div>
+            <div class="xref-snippet-item">Arabic &amp; Sufi Terms — Qaf / Mount Qaf, Nasut through HaHut, Divan</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="xref-topic">
+      <div class="xref-topic-heading">Fana (Annihilation) Sequence</div>
+      <div class="xref-entries">
+        <div class="xref-entry">
+          <span class="xref-location">Part II, Ch. 4</span> — <span class="xref-chapter-title">Concentration, Visualization &amp; Meditation</span>
+          <div class="xref-snippets">
+            <div class="xref-snippet-item">Fana-fi-Sheikh — Three Stages Practice</div>
+            <div class="xref-snippet-item">Fana Sequence — The Complete Arc (Sheikh → Rasul → Allah)</div>
+          </div>
+        </div>
+        <div class="xref-entry">
+          <span class="xref-location">Part II, Ch. 5</span> — <span class="xref-chapter-title">Fikr, Zikr &amp; Wazifa</span>
+          <div class="xref-snippets">
+            <div class="xref-snippet-item">Doing Zikr as Murshid — third stage of Fana-fi-Sheikh made practical</div>
+            <div class="xref-snippet-item">Sallallahu &#x27;Alaika Ya Rasul Allah — Fana-fi-Rasul practice</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="flower-ornament">✿ ✿ ✿</div>
+</section>
+<section id="appendix-c" class="appendix-page">
+  <span class="appendix-label">Appendix C</span>
+  <h2 class="section-title">PRACTICE QUICK-REFERENCE</h2>
+  <div class="gold-rule"></div>
+  <p class="appendix-intro">A complete guide to all 80 practices taught during Concentration. Each entry shows the practice name, a brief description, and where to find the full instructions.</p>
+  <div class="appendix-body">
+    <div class="pqr-category">
+      <div class="pqr-category-heading">Prayers &amp; Invocations</div>
+      <div class="pqr-practice">
+        <div class="pqr-practice-name">Saum — Prayer of Repose</div>
+        <div class="pqr-description">Daily standing prayer with nine bodily movements addressed to the One Divine Being; full text + movements.</div>
+        <div class="pqr-meta">Part I, Chapter 1 · Pir Zia Inayat Khan</div>
+      </div>
+      <div class="pqr-practice">
+        <div class="pqr-practice-name">Salat — Prayer of Benediction</div>
+        <div class="pqr-description">Daily closing prayer addressed to the Spirit of Guidance; simple form; half and full prostration versions.</div>
+        <div class="pqr-meta">Parts I / II · Pir Zia Inayat Khan / Urs Qutbuddin</div>
+      </div>
+      <div class="pqr-practice">
+        <div class="pqr-practice-name">Salawat — Complete Form</div>
+        <div class="pqr-description">Gender-inclusive expansion of Salat naming syzygies from Hindu, Abrahamic, and Zoroastrian traditions.</div>
+        <div class="pqr-meta">Parts I / II · Pir Zia Inayat Khan / Urs Qutbuddin</div>
+      </div>
+      <div class="pqr-practice">
+        <div class="pqr-practice-name">The Invocation (Nayaz)</div>
+        <div class="pqr-description">Opening orienting prayer: &#x27;Toward the One, the Perfection of Love, Harmony, and Beauty…&#x27;; recite upon waking with inner longing.</div>
+        <div class="pqr-meta">Parts I / II / III · Pir Zia Inayat Khan / Urs Qutbuddin / Guide Mansur</div>
+      </div>
+      <div class="pqr-practice">
+        <div class="pqr-practice-name">Amān — Prayer of Sanctuary</div>
+        <div class="pqr-description">Opening prayer of each Suluk day acknowledging world suffering with compassionate witness; not one of 99 Names.</div>
+        <div class="pqr-meta">Part I, Chapter 1 · Pir Zia Inayat Khan</div>
+      </div>
+      <div class="pqr-practice">
+        <div class="pqr-practice-name">Khatum — Closing Prayer</div>
+        <div class="pqr-description">Closing prayer of every Suluk gathering: &#x27;O Thou who art the Perfection of Love, Harmony, and Beauty…&#x27;</div>
+        <div class="pqr-meta">Parts I / III · Pir Zia Inayat Khan / Guide Mansur</div>
+      </div>
+      <div class="pqr-practice">
+        <div class="pqr-practice-name">Elemental Purification Prayer (Nayaz)</div>
+        <div class="pqr-description">Beloved Sovereign prayer invoked after elemental breaths: sun rays, air waves, all-pervading life in space — purify and revivify.</div>
+        <div class="pqr-meta">Parts II / III · Urs Qutbuddin / Guide Mansur</div>
+      </div>
+      <div class="pqr-practice">
+        <div class="pqr-practice-name">Prayer of the Artificer</div>
+        <div class="pqr-description">Place fingertips on device and recite blessing to sanctify phones/computers as spiritual artifacts.</div>
+        <div class="pqr-meta">Part I, Chapter 1 · Pir Zia Inayat Khan</div>
+      </div>
+      <div class="pqr-practice">
+        <div class="pqr-practice-name">Fazl Mullah Rahim Allah — Blessing Invocation</div>
+        <div class="pqr-description">Sung or recited invocation: Fazl (blessing) + Mullah (great) + Rahim Allah (Allah&#x27;s compassion); use in worldly/noisy situations.</div>
+        <div class="pqr-meta">Part III, Chapter 4 · Guide Mansur</div>
+      </div>
+      <div class="pqr-practice">
+        <div class="pqr-practice-name">Saum Prayer — Movement Instructions</div>
+        <div class="pqr-description">Nine-movement sequence for Saum: palms forward, hands converge, bend forward, rise, lean with palms to ground, open Qalb, final surrender.</div>
+        <div class="pqr-meta">Part I, Chapter 5 · Pir Zia Inayat Khan</div>
+      </div>
+    </div>
+    <div class="pqr-category">
+      <div class="pqr-category-heading">Breath Practices</div>
+      <div class="pqr-practice">
+        <div class="pqr-practice-name">Rightful Breathing Practice</div>
+        <div class="pqr-description">Upright seated breath: enter without forcing, do not rush exhale, let muscles yield to maximize refreshment.</div>
+        <div class="pqr-meta">Part I, Chapter 3 · Pir Zia Inayat Khan</div>
+      </div>
+      <div class="pqr-practice">
+        <div class="pqr-practice-name">The Invisible Rain — Full Body Breath</div>
+        <div class="pqr-description">Visualize subtle rain entering every pore; breath cascades from crown to toes quenching each cell; exhalation as communion with plant life.</div>
+        <div class="pqr-meta">Parts I · Pir Zia Inayat Khan</div>
+      </div>
+      <div class="pqr-practice">
+        <div class="pqr-practice-name">Purification Breathing — Emotional Stages</div>
+        <div class="pqr-description">Watch murkiness on the out-breath dissolving like squeezing a dirty sponge; stages: murkiness → less murkiness → clear channel → radiance.</div>
+        <div class="pqr-meta">Part I, Chapter 3 · Pir Zia Inayat Khan</div>
+      </div>
+      <div class="pqr-practice">
+        <div class="pqr-practice-name">Elemental Purification Ritual</div>
+        <div class="pqr-description">Identify the element of a burden (earth/water/fire/air), take it to nature, release it through burial, pouring, burning, or wind; post-ritual prayer.</div>
+        <div class="pqr-meta">Part I, Chapter 3 · Pir Zia Inayat Khan</div>
+      </div>
+      <div class="pqr-practice">
+        <div class="pqr-practice-name">Five Aspects of Breath — Review</div>
+        <div class="pqr-description">Pir Zia&#x27;s five-aspect model: exhalation, depth/breadth, belly-centering, rhythm, and scope (physical breath → soul breathing).</div>
+        <div class="pqr-meta">Part I, Chapter 3 · Pir Zia Inayat Khan</div>
+      </div>
+      <div class="pqr-practice">
+        <div class="pqr-practice-name">Breath Visualization Through Soles of Feet</div>
+        <div class="pqr-description">Lie on the ground; inhale through soles as a wave, let it fill the whole body; exhale back out through the feet into earth (10 minutes).</div>
+        <div class="pqr-meta">Part I, Chapter 4 · Pir Zia Inayat Khan</div>
+      </div>
+      <div class="pqr-practice">
+        <div class="pqr-practice-name">Light &amp; Breath Practice — The Orb / Auric Body</div>
+        <div class="pqr-description">Visualize breath as a sphere of light that expands on exhale and congeals on inhale; reveals the auric/etheric body.</div>
+        <div class="pqr-meta">Part I, Chapter 4 · Pir Zia Inayat Khan</div>
+      </div>
+      <div class="pqr-practice">
+        <div class="pqr-practice-name">The Swing of Breath — Ha × 11</div>
+        <div class="pqr-description">Feel the breath as a pendulum swing between inner and outer; intone Ha eleven times connecting little body to great body of the universe.</div>
+        <div class="pqr-meta">Part I, Chapter 5 · Pir Zia Inayat Khan</div>
+      </div>
+      <div class="pqr-practice">
+        <div class="pqr-practice-name">Five Element Breathing — Foundation</div>
+        <div class="pqr-description">Core elemental breath cycle: Earth (nose-nose), Water (nose-mouth), Fire (mouth-nose), Air (mouth-mouth), Ether (subtle both); each 5 breaths.</div>
+        <div class="pqr-meta">Part II, Chapter 3 · Urs Qutbuddin</div>
+      </div>
+      <div class="pqr-practice">
+        <div class="pqr-practice-name">Water Elemental Breath</div>
+        <div class="pqr-description">Inhale nose, exhale mouth; visualize waterfall of water and light from above washing through the body; color green; direction downward.</div>
+        <div class="pqr-meta">Part II, Chapter 3 · Urs Qutbuddin</div>
+      </div>
+      <div class="pqr-practice">
+        <div class="pqr-practice-name">Three Element Breath Sequence</div>
+        <div class="pqr-description">Earth + Water + Fire practiced in one sitting with full layer sets (direction, color, quality, healing aspect) for the first time.</div>
+        <div class="pqr-meta">Part II, Chapter 3 · Urs Qutbuddin</div>
+      </div>
+      <div class="pqr-practice">
+        <div class="pqr-practice-name">Complete Five-Element Breath with Ether</div>
+        <div class="pqr-description">First time all five elements practiced in sequence; Ether = quintessence, no direction, no color, three planes (body/mind/spirit).</div>
+        <div class="pqr-meta">Part II, Chapter 3 · Urs Qutbuddin</div>
+      </div>
+      <div class="pqr-practice">
+        <div class="pqr-practice-name">Hosh dar Dam — Breath Awareness</div>
+        <div class="pqr-description">Life-practice: make the breath your home base throughout the day; go there whenever thinking has no meaningful occupation.</div>
+        <div class="pqr-meta">Part III, Chapter 2 · Guide Mansur</div>
+      </div>
+      <div class="pqr-practice">
+        <div class="pqr-practice-name">Qasab — The Reed Breath (Alternate Nostril)</div>
+        <div class="pqr-description">9-step alternating nostril sequence; at retention: close nostrils, expand chest, curl tongue, turn eyes up, hold 2× inhale count, think HU.</div>
+        <div class="pqr-meta">Part III, Chapter 2 · Guide Mansur</div>
+      </div>
+      <div class="pqr-practice">
+        <div class="pqr-practice-name">Five Elemental Purification Breaths (Mansur Version)</div>
+        <div class="pqr-description">Complete elemental sequence with Mansur&#x27;s specific visualizations, directions, colors, and qualities; 7 rounds per element (max 10).</div>
+        <div class="pqr-meta">Part III, Chapter 2 · Guide Mansur</div>
+      </div>
+      <div class="pqr-practice">
+        <div class="pqr-practice-name">Breath Still-Point Concentration</div>
+        <div class="pqr-description">At end of exhale, hold briefly and savor the still-point; feel the body&#x27;s magnetism draw the in-breath without will — Murshid&#x27;s cobra metaphor.</div>
+        <div class="pqr-meta">Part II, Chapter 4 · Urs Qutbuddin</div>
+      </div>
+      <div class="pqr-practice">
+        <div class="pqr-practice-name">Ablutions — Ritual Purification</div>
+        <div class="pqr-description">7-step washing sequence (hands, mouth, nostrils, face, arms, hair/neck, feet), 3 times each; body as five-pointed star; practiced upon waking.</div>
+        <div class="pqr-meta">Part I, Chapter 5 · Pir Zia Inayat Khan</div>
+      </div>
+    </div>
+    <div class="pqr-category">
+      <div class="pqr-category-heading">Elemental Practices</div>
+      <div class="pqr-practice">
+        <div class="pqr-practice-name">Earth Element Extended Practice — Three Layers</div>
+        <div class="pqr-description">Layer 1: purification/grounding (let go on exhale, draw magnetism on inhale); Layer 2: horizontal direction; Layer 3: yellow/ocher color.</div>
+        <div class="pqr-meta">Part II, Chapter 3 · Urs Qutbuddin</div>
+      </div>
+      <div class="pqr-practice">
+        <div class="pqr-practice-name">Earth Practice: Eshk — Communion with Earth</div>
+        <div class="pqr-description">Go barefoot; each step is a kiss; be aware of eshk (longing-love) between body and earth; we are earthlings — made of the same material.</div>
+        <div class="pqr-meta">Part II, Chapter 6 · Urs Qutbuddin</div>
+      </div>
+    </div>
+    <div class="pqr-category">
+      <div class="pqr-category-heading">Concentration &amp; Visualization</div>
+      <div class="pqr-practice">
+        <div class="pqr-practice-name">Color Black Concentration</div>
+        <div class="pqr-description">Fill the mind completely with black — ebony, obsidian; no black things, just blackness; first in the alchemical sequence.</div>
+        <div class="pqr-meta">Part I, Chapter 4 · Pir Zia Inayat Khan</div>
+      </div>
+      <div class="pqr-practice">
+        <div class="pqr-practice-name">Color White Concentration</div>
+        <div class="pqr-description">Replace or amplify white from behind closed eyelids; two approaches (replace or amplify); self-observation of returning attention.</div>
+        <div class="pqr-meta">Part I, Chapter 4 · Pir Zia Inayat Khan</div>
+      </div>
+      <div class="pqr-practice">
+        <div class="pqr-practice-name">Color Yellow Concentration — Alchemical</div>
+        <div class="pqr-description">Third in black→white→yellow alchemical sequence (Khem); become saturated by yellow like cloth in dye; symbolizes illumination.</div>
+        <div class="pqr-meta">Part I, Chapter 4 · Pir Zia Inayat Khan</div>
+      </div>
+      <div class="pqr-practice">
+        <div class="pqr-practice-name">Color Red Concentration</div>
+        <div class="pqr-description">See redness as living atmosphere, not a thing; two phases: hold redness, then let fade and notice resonance; extend throughout day.</div>
+        <div class="pqr-meta">Part I, Chapter 4 · Pir Zia Inayat Khan</div>
+      </div>
+      <div class="pqr-practice">
+        <div class="pqr-practice-name">Color Blue Concentration</div>
+        <div class="pqr-description">Let blue fill and saturate; be dyed blue in every fiber; Murshid&#x27;s nature meditations on blue (heaven, purity, uplifting).</div>
+        <div class="pqr-meta">Part I, Chapter 4 · Pir Zia Inayat Khan</div>
+      </div>
+      <div class="pqr-practice">
+        <div class="pqr-practice-name">Color Concentration: Brown to Green</div>
+        <div class="pqr-description">Slow intentional color shift from earth-brown to life-green; bridges Earth and Water elements; bridging density to flow.</div>
+        <div class="pqr-meta">Part II, Chapter 4 · Urs Qutbuddin</div>
+      </div>
+      <div class="pqr-practice">
+        <div class="pqr-practice-name">Final Color Concentration — Orange to Gold</div>
+        <div class="pqr-description">Ceremonial four-color closing sequence of Concentration 1: orange → red → purple → gold; immersed in golden light.</div>
+        <div class="pqr-meta">Part II, Chapter 4 · Urs Qutbuddin</div>
+      </div>
+      <div class="pqr-practice">
+        <div class="pqr-practice-name">Gemstone Concentration</div>
+        <div class="pqr-description">Visualize a translucent crystalline gemstone; see facets, glow, revolve it; avoid associations; rest in resonance afterward.</div>
+        <div class="pqr-meta">Part I, Chapter 4 · Pir Zia Inayat Khan</div>
+      </div>
+      <div class="pqr-practice">
+        <div class="pqr-practice-name">Sandpaper Touch Concentration</div>
+        <div class="pqr-description">Close eyes; give whole attention to fingertips on sandpaper; feel every grain; stop; notice state. &#x27;That which your heart meets is introduced into eternity.&#x27;</div>
+        <div class="pqr-meta">Part I, Chapter 4 · Pir Zia Inayat Khan</div>
+      </div>
+      <div class="pqr-practice">
+        <div class="pqr-practice-name">Flower Concentration Practice</div>
+        <div class="pqr-description">Jamali concentration object: Jalali phase (active observation of petals/stamen/color) followed by Jamali phase (easeful gentle embrace).</div>
+        <div class="pqr-meta">Part I, Chapter 4 · Pir Zia Inayat Khan</div>
+      </div>
+      <div class="pqr-practice">
+        <div class="pqr-practice-name">Gazing &amp; Visualization — Crescent Moon + Star</div>
+        <div class="pqr-description">Two phases: open-eyed fixed gaze on wall point; inner visualization of both crescent moon and star held together; crystallizes retreat arc.</div>
+        <div class="pqr-meta">Part I, Chapter 4 · Pir Zia Inayat Khan</div>
+      </div>
+      <div class="pqr-practice">
+        <div class="pqr-practice-name">Green Dot Practice</div>
+        <div class="pqr-description">Stand and gaze at a green dot on the wall without rigidity for one minute; point reduces each session; eventually no dot needed.</div>
+        <div class="pqr-meta">Part I, Chapter 4 · Pir Zia Inayat Khan</div>
+      </div>
+      <div class="pqr-practice">
+        <div class="pqr-practice-name">Visualization — Calling a Loved One</div>
+        <div class="pqr-description">Let a beloved person&#x27;s name resound in the mind; allow face/form to emerge from the name; let it dissolve back; rest with residue.</div>
+        <div class="pqr-meta">Part I, Chapter 4 · Pir Zia Inayat Khan</div>
+      </div>
+      <div class="pqr-practice">
+        <div class="pqr-practice-name">Tailbone Concentration Practice</div>
+        <div class="pqr-description">Shift whole awareness to the tailbone; notice sensations (warmth, movement, stillness); breathe into and out of the tailbone; check resonance.</div>
+        <div class="pqr-meta">Part II, Chapter 4 · Urs Qutbuddin</div>
+      </div>
+      <div class="pqr-practice">
+        <div class="pqr-practice-name">Three-Stage Being Visualization</div>
+        <div class="pqr-description">Stage 1: known person; Stage 2: known-of person (saint/teacher); Stage 3: non-physical being (angel/jinn/Bodhisattva); concentration→contemplation arc.</div>
+        <div class="pqr-meta">Part II, Chapter 4 · Urs Qutbuddin</div>
+      </div>
+      <div class="pqr-practice">
+        <div class="pqr-practice-name">Burning Torch Concentration</div>
+        <div class="pqr-description">Visualize a burning torch: see colors, movement, dancing flames; fire given direction = illumination; when wandering, return to image.</div>
+        <div class="pqr-meta">Part II, Chapter 4 · Urs Qutbuddin</div>
+      </div>
+      <div class="pqr-practice">
+        <div class="pqr-practice-name">Skull Light Concentration — The Luminous Glance</div>
+        <div class="pqr-description">Feel skull expanding; light enters through forehead on inhale; cast beam outward on exhale; open eyes with beams shedding light on the room.</div>
+        <div class="pqr-meta">Part II, Chapter 4 · Urs Qutbuddin</div>
+      </div>
+      <div class="pqr-practice">
+        <div class="pqr-practice-name">Star, Crescent Moon, and Heart Visualization</div>
+        <div class="pqr-description">Build the three Inayatiyya symbol forms in sequence: five-pointed star → crescent moon below → heart surrounding both; then dissolve in reverse.</div>
+        <div class="pqr-meta">Part II, Chapter 4 · Urs Qutbuddin</div>
+      </div>
+      <div class="pqr-practice">
+        <div class="pqr-practice-name">River Visualization Practice</div>
+        <div class="pqr-description">Sit in Astaghfirullah atmosphere; imagine a river — its color, animals, plants, sound, reflected light; stay with the flow; notice body resonance afterward.</div>
+        <div class="pqr-meta">Part II, Chapter 4 · Urs Qutbuddin</div>
+      </div>
+    </div>
+    <div class="pqr-category">
+      <div class="pqr-category-heading">Fikr, Zikr &amp; Wazifa</div>
+      <div class="pqr-practice">
+        <div class="pqr-practice-name">Ashukrillah — Zikr of Gratitude</div>
+        <div class="pqr-description">Repeat &#x27;Ashukrillah&#x27; (Thanks be to the One) many times; dwell in thankfulness atmosphere; let it flow to what you are grateful for.</div>
+        <div class="pqr-meta">Part II, Chapter 5 · Urs Qutbuddin</div>
+      </div>
+      <div class="pqr-practice">
+        <div class="pqr-practice-name">Astaghfirullah Zikr — 33x</div>
+        <div class="pqr-description">Repeat &#x27;Astaghfirullah&#x27; (I seek forgiveness from God) 33 times in tone; sit in silent all-compassionate presence; connects to water element / tears.</div>
+        <div class="pqr-meta">Part II, Chapter 5 · Urs Qutbuddin</div>
+      </div>
+      <div class="pqr-practice">
+        <div class="pqr-practice-name">Doing Zikr as Murshid</div>
+        <div class="pqr-description">Pir Vilayat&#x27;s instruction: don&#x27;t do Zikr as yourself — do it as if Murshid does it; &#x27;another power&#x27; is released from within.</div>
+        <div class="pqr-meta">Part II, Chapter 5 · Urs Qutbuddin</div>
+      </div>
+      <div class="pqr-practice">
+        <div class="pqr-practice-name">Sallallahu &#x27;Alaika Ya Rasul Allah Zikr</div>
+        <div class="pqr-description">Recite 11 times in tone: &#x27;Divine benediction be upon you, O messenger of God&#x27;; enters presence of the Rasul through Fana-fi-Rasul.</div>
+        <div class="pqr-meta">Part II, Chapter 5 · Urs Qutbuddin</div>
+      </div>
+      <div class="pqr-practice">
+        <div class="pqr-practice-name">Fikr — Ya Sabur-o / Ya Wahhab-o</div>
+        <div class="pqr-description">First/foundation fikr: inhale Sabur (patient meeting of life), exhale Wahhab (freely abundant flow of blessings); 11 or 33 times daily.</div>
+        <div class="pqr-meta">Part III, Chapter 4 · Guide Mansur</div>
+      </div>
+      <div class="pqr-practice">
+        <div class="pqr-practice-name">Fikr — Subuhun / Quddusun</div>
+        <div class="pqr-description">Preparatory fikr before advanced practice: inhale Subuhun (Glorified One), exhale Quddusun (Holy One); purification of consciousness; 33x.</div>
+        <div class="pqr-meta">Part III, Chapter 4 · Guide Mansur</div>
+      </div>
+      <div class="pqr-practice">
+        <div class="pqr-practice-name">Fikr — Ya Fazl / Ya Fattah</div>
+        <div class="pqr-description">Current leading practice: inhale Fazl (blessing/illumination), exhale Fattah (opener/revealer of paths); when thinking stops, fikr continues on its own.</div>
+        <div class="pqr-meta">Part III, Chapter 4 · Guide Mansur</div>
+      </div>
+      <div class="pqr-practice">
+        <div class="pqr-practice-name">Ayat al-Qutb — Advanced Fikr</div>
+        <div class="pqr-description">Advanced fikr practice; preceded by Subuhun-Quddusun as preparatory; reference Gatha II Pasi Anfas.</div>
+        <div class="pqr-meta">Part III, Chapter 4 · Guide Mansur</div>
+      </div>
+    </div>
+    <div class="pqr-category">
+      <div class="pqr-category-heading">Body Awareness</div>
+      <div class="pqr-practice">
+        <div class="pqr-practice-name">Energy Ball Practice</div>
+        <div class="pqr-description">Massage arms; breathe on palms; raise hands palm-facing; play with distance to feel the energy ball between them; awareness of etheric field.</div>
+        <div class="pqr-meta">Part II, Chapter 4 · Urs Qutbuddin</div>
+      </div>
+    </div>
+    <div class="pqr-category">
+      <div class="pqr-category-heading">Other Practices</div>
+      <div class="pqr-practice">
+        <div class="pqr-practice-name">The Amen Gesture — Physical Cascade</div>
+        <div class="pqr-description">After prayers: gather accumulated resonance in cupped hands, lift overhead, pour down over face-neck-shoulders-chest.</div>
+        <div class="pqr-meta">Part I, Chapter 1 · Pir Zia Inayat Khan</div>
+      </div>
+      <div class="pqr-practice">
+        <div class="pqr-practice-name">Sleep &amp; Waking — Nostril Practice</div>
+        <div class="pqr-description">Sleep on right side (lunar nostril); before waking shift to left side to activate solar nostril; step out of bed right foot first; say Invocation first.</div>
+        <div class="pqr-meta">Part I, Chapter 5 · Pir Zia Inayat Khan</div>
+      </div>
+      <div class="pqr-practice">
+        <div class="pqr-practice-name">Jalali — The Star Practice</div>
+        <div class="pqr-description">Visualize a single blazing star; face its fierce Jalali radiance; breathe in starlight; dissolve into the star; rest in afterglow.</div>
+        <div class="pqr-meta">Part I, Chapter 4 · Pir Zia Inayat Khan</div>
+      </div>
+      <div class="pqr-practice">
+        <div class="pqr-practice-name">Jamali — The Crescent Moon Practice</div>
+        <div class="pqr-description">Visualize crescent moon with cool silver light; embody its receptive, reflective quality; become lunar; release opinions.</div>
+        <div class="pqr-meta">Part I, Chapter 4 · Pir Zia Inayat Khan</div>
+      </div>
+      <div class="pqr-practice">
+        <div class="pqr-practice-name">Cardamom Tasting Practice</div>
+        <div class="pqr-description">Place cardamom on tongue; bite once; give whole attention to taste — no taster, no tasted, only the tasting; cultivate interest + indifference.</div>
+        <div class="pqr-meta">Part I, Chapter 4 · Pir Zia Inayat Khan</div>
+      </div>
+      <div class="pqr-practice">
+        <div class="pqr-practice-name">Rose Essence Smell Practice</div>
+        <div class="pqr-description">Lift rose-essence paper to nostrils; lose yourself in fragrance until there is only the fragrance making itself known; location remains accessible.</div>
+        <div class="pqr-meta">Part I, Chapter 4 · Pir Zia Inayat Khan</div>
+      </div>
+      <div class="pqr-practice">
+        <div class="pqr-practice-name">Journey Through the Mind: Three Faculties</div>
+        <div class="pqr-description">Sequential guided exploration of Sensation (Nasut), Memory (Malakut), and Imagination (Malakut); think of an unmet person, form their presence, dissolve.</div>
+        <div class="pqr-meta">Part I, Chapter 4 · Pir Zia Inayat Khan</div>
+      </div>
+      <div class="pqr-practice">
+        <div class="pqr-practice-name">Visualizing an Inspiring Being</div>
+        <div class="pqr-description">Imagine an inspiring person in front of you; hold their presence and atmosphere; transition from outer objects to inner beings in concentration.</div>
+        <div class="pqr-meta">Part II, Chapter 4 · Urs Qutbuddin</div>
+      </div>
+      <div class="pqr-practice">
+        <div class="pqr-practice-name">Three Contemplation Practices</div>
+        <div class="pqr-description">Hold three intangibles in sequence: (1) a character trait, (2) a driving motivation, (3) a spiritual aspiration; explore resonance without analysis.</div>
+        <div class="pqr-meta">Part II, Chapter 4 · Urs Qutbuddin</div>
+      </div>
+      <div class="pqr-practice">
+        <div class="pqr-practice-name">Fana-fi-Sheikh — Three Stages</div>
+        <div class="pqr-description">Stage 1: build image of Murshid, glance meets glance, Silsila present; Stage 2: release image, hold pure atmosphere in heart; Stage 3: Murshid&#x27;s qualities express through you.</div>
+        <div class="pqr-meta">Part II, Chapter 4 · Urs Qutbuddin</div>
+      </div>
+      <div class="pqr-practice">
+        <div class="pqr-practice-name">Sky of Mind — Five-Stage Practice</div>
+        <div class="pqr-description">Stage 1: witness thoughts as clouds; Stage 2: dense dark clouds; Stage 3: remember soul as inner sun; Stage 4: luminous ice-crystal clouds; Stage 5: radiate through open eyes.</div>
+        <div class="pqr-meta">Part III, Chapter 3 · Guide Mansur</div>
+      </div>
+      <div class="pqr-practice">
+        <div class="pqr-practice-name">Muraqabah — Watchfulness of Thought</div>
+        <div class="pqr-description">When negative thought arises: pause, ask where it comes from, release, then REJOICE — the noticing is itself waking up.</div>
+        <div class="pqr-meta">Part III, Chapter 3 · Guide Mansur</div>
+      </div>
+      <div class="pqr-practice">
+        <div class="pqr-practice-name">Ideal Guru Contemplation</div>
+        <div class="pqr-description">Hold archetype of the Ideal Guru (Pir Zia, inspiring yogi); absorption into the quality of presence — &#x27;it can be caught, not just taught.&#x27;</div>
+        <div class="pqr-meta">Part III, Chapter 3 · Guide Mansur</div>
+      </div>
+      <div class="pqr-practice">
+        <div class="pqr-practice-name">Subuhun Quddusun Rabbanu — Evening Practice</div>
+        <div class="pqr-description">Recite 33 times before sleep; Subuhun (utterly pure), Quddusun (Holy One), Rabbana (our Lord); takes energy into sleep — &#x27;winding the clock.&#x27;</div>
+        <div class="pqr-meta">Part III, Chapter 4 · Guide Mansur</div>
+      </div>
+      <div class="pqr-practice">
+        <div class="pqr-practice-name">Daily Task — Stepping Through Doors (Right Foot First)</div>
+        <div class="pqr-description">Step through every threshold right foot first; cultivates concentrated, mindful awareness in everyday movement; practice for one day.</div>
+        <div class="pqr-meta">Part I, Chapter 5 · Pir Zia Inayat Khan</div>
+      </div>
+      <div class="pqr-practice">
+        <div class="pqr-practice-name">Daily Task — Avoid the Word &#x27;I&#x27;</div>
+        <div class="pqr-description">Abstain from using the word &#x27;I&#x27; for 24 hours; substitute &#x27;we&#x27;, &#x27;one&#x27;, or avoid self-reference; ego-observation practice.</div>
+        <div class="pqr-meta">Part I, Chapter 5 · Pir Zia Inayat Khan</div>
+      </div>
+      <div class="pqr-practice">
+        <div class="pqr-practice-name">Geographical Orientation — Daily Task</div>
+        <div class="pqr-description">Determine and maintain awareness of north/south/east/west plus nearest sea, mountains, and river throughout 24 hours without technology.</div>
+        <div class="pqr-meta">Parts I / II · Pir Zia Inayat Khan / Urs Qutbuddin</div>
+      </div>
+      <div class="pqr-practice">
+        <div class="pqr-practice-name">Think of God After Every Statement</div>
+        <div class="pqr-description">After everything you say, pause and remember God for just a moment — transforms ordinary conversation into continuous remembrance.</div>
+        <div class="pqr-meta">Part I, Chapter 5 · Pir Zia Inayat Khan</div>
+      </div>
+      <div class="pqr-practice">
+        <div class="pqr-practice-name">Walking Practice — Two-Year Prescription</div>
+        <div class="pqr-description">Walk daily; feel gravity holding you, feel every footstep&#x27;s contact with earth; &#x27;Let your soul be where your soles are.&#x27;</div>
+        <div class="pqr-meta">Part I, Chapter 5 · Pir Zia Inayat Khan</div>
+      </div>
+      <div class="pqr-practice">
+        <div class="pqr-practice-name">Four Seating Positions for Practice</div>
+        <div class="pqr-description">Murshid&#x27;s four postures: cross-legged (king/queen, center of universe), Cupid (archer seat for Zikr), lotus (sages), kneeling (before the beloved).</div>
+        <div class="pqr-meta">Part II, Chapter 6 · Urs Qutbuddin</div>
+      </div>
+      <div class="pqr-practice">
+        <div class="pqr-practice-name">Itisal — The Junction Practice (Ha × 11)</div>
+        <div class="pqr-description">Intone Ha eleven times; trace sound from ground through tailbone to chest; junction between individual and cosmic being; daily after elemental breath.</div>
+        <div class="pqr-meta">Part II, Chapter 6 · Urs Qutbuddin</div>
+      </div>
+      <div class="pqr-practice">
+        <div class="pqr-practice-name">Chivalric Rules — 40 Rules (Iron / Copper / Silver / Gold)</div>
+        <div class="pqr-description">40 ethical contemplations as personal pledges over 40 days; each rule a prism for self-refinement; Rules 1–10 Iron covered across Parts I and II.</div>
+        <div class="pqr-meta">Parts I / II · Pir Zia Inayat Khan / Urs Qutbuddin</div>
+      </div>
+      <div class="pqr-practice">
+        <div class="pqr-practice-name">Daily Practice Sequence (Mansur)</div>
+        <div class="pqr-description">Complete ordered sequence: elemental breaths, invocation, Sabur/Wahhab, Subuhun/Quddusun, Fazl/Fattah, watchfulness/hosh dar dam, Qasab, Sky of Mind.</div>
+        <div class="pqr-meta">Part III, Chapter 5 · Guide Mansur</div>
+      </div>
+    </div>
+  </div>
+  <div class="flower-ornament">✿ ✿ ✿</div>
+</section>
 <section id="colophon" class="colophon-page">
+  <span class="appendix-label">Appendix D</span>
   <h2 class="section-title">COLOPHON</h2>
   <div class="gold-rule"></div>
   <div class="colophon-body">
