@@ -704,6 +704,95 @@
       color: var(--gold) !important;
     }
 
+    /* ─── Table of Contents ─── */
+    .toc-page {
+      padding: 60px 0 80px;
+    }
+    .toc-part {
+      margin-top: 30px;
+    }
+    .toc-part-header {
+      display: flex;
+      align-items: baseline;
+      gap: 12px;
+      margin-bottom: 8px;
+      padding-bottom: 6px;
+      border-bottom: 1px solid var(--rule-color);
+    }
+    .toc-part-label {
+      font-family: var(--display);
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--gold);
+      letter-spacing: 3px;
+      text-transform: uppercase;
+    }
+    .toc-part-title {
+      font-family: var(--display);
+      font-size: 18px;
+      font-weight: 600;
+      color: var(--indigo);
+    }
+    .toc-chapter {
+      display: flex;
+      align-items: baseline;
+      padding: 5px 0 5px 20px;
+      text-decoration: none;
+      color: var(--body-color);
+      transition: color 0.2s;
+    }
+    .toc-chapter:hover {
+      color: var(--gold);
+    }
+    .toc-ch-num {
+      font-family: var(--display);
+      font-size: 16px;
+      font-weight: 600;
+      color: var(--gold);
+      min-width: 30px;
+    }
+    .toc-ch-title {
+      font-size: 16px;
+      flex: 1;
+    }
+    .toc-ch-dots {
+      flex: 1;
+      border-bottom: 1px dotted var(--rule-color);
+      margin: 0 8px;
+      min-width: 20px;
+    }
+    .toc-ch-count {
+      font-size: 14px;
+      color: var(--warm-gray);
+      font-style: italic;
+    }
+    .toc-back-matter {
+      margin-top: 30px;
+      padding-top: 10px;
+      border-top: 2px solid var(--gold);
+    }
+    .toc-back-label {
+      font-family: var(--display);
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--gold);
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      margin-bottom: 8px;
+    }
+    .toc-appendix {
+      display: flex;
+      align-items: baseline;
+      padding: 5px 0 5px 20px;
+      text-decoration: none;
+      color: var(--body-color);
+      transition: color 0.2s;
+      font-size: 16px;
+    }
+    .toc-appendix:hover {
+      color: var(--gold);
+    }
+
     /* ─── Lineage Page ─── */
     .lineage-page {
       padding: 60px 0 80px;
@@ -1033,6 +1122,7 @@
           <a href="#title-page">Title Page</a>
           <a href="#dedication">Dedication</a>
           <a href="#lineage">The Lineage</a>
+          <a href="#toc">Table of Contents</a>
           <a href="#introduction">Introduction</a>
         </div>
         
@@ -1257,6 +1347,67 @@
     </div>
   </div>
   <div class="flower-ornament" style="margin-top: 40px;">✿</div>
+</section>
+<section id="toc" class="toc-page">
+  <h2 class="section-title">TABLE OF CONTENTS</h2>
+  <div class="gold-rule"></div>
+
+  <div class="toc-part">
+    <div class="toc-part-header">
+      <span class="toc-part-label">Part I</span>
+      <span class="toc-part-title">The Teachings of Pir Zia Inayat Khan</span>
+    </div>
+    <a href="#part-i-ch-1" class="toc-chapter"><span class="toc-ch-num">1.</span><span class="toc-ch-title">Prayers &amp; Invocations</span><span class="toc-ch-dots"></span><span class="toc-ch-count">9 teachings</span></a>
+    <a href="#part-i-ch-2" class="toc-chapter"><span class="toc-ch-num">2.</span><span class="toc-ch-title">Chivalric Rules &amp; Iron Rules</span><span class="toc-ch-dots"></span><span class="toc-ch-count">6 teachings</span></a>
+    <a href="#part-i-ch-3" class="toc-chapter"><span class="toc-ch-num">3.</span><span class="toc-ch-title">Breath Practices</span><span class="toc-ch-dots"></span><span class="toc-ch-count">5 teachings</span></a>
+    <a href="#part-i-ch-4" class="toc-chapter"><span class="toc-ch-num">4.</span><span class="toc-ch-title">Concentration, Visualization &amp; Meditation</span><span class="toc-ch-dots"></span><span class="toc-ch-count">32 teachings</span></a>
+    <a href="#part-i-ch-5" class="toc-chapter"><span class="toc-ch-num">5.</span><span class="toc-ch-title">Movements, Rituals &amp; Techniques</span><span class="toc-ch-dots"></span><span class="toc-ch-count">12 teachings</span></a>
+    <a href="#part-i-ch-6" class="toc-chapter"><span class="toc-ch-num">6.</span><span class="toc-ch-title">Teachings &amp; Wisdom</span><span class="toc-ch-dots"></span><span class="toc-ch-count">46 teachings</span></a>
+    <a href="#part-i-ch-7" class="toc-chapter"><span class="toc-ch-num">7.</span><span class="toc-ch-title">Stories &amp; Parables</span><span class="toc-ch-dots"></span><span class="toc-ch-count">5 teachings</span></a>
+    <a href="#part-i-ch-8" class="toc-chapter"><span class="toc-ch-num">8.</span><span class="toc-ch-title">Quotes, Sayings &amp; Poetry</span><span class="toc-ch-dots"></span><span class="toc-ch-count">11 teachings</span></a>
+    <a href="#part-i-ch-9" class="toc-chapter"><span class="toc-ch-num">9.</span><span class="toc-ch-title">Deep Study &amp; Arabic Terms</span><span class="toc-ch-dots"></span><span class="toc-ch-count">8 teachings</span></a>
+  </div>
+
+  <div class="toc-part">
+    <div class="toc-part-header">
+      <span class="toc-part-label">Part II</span>
+      <span class="toc-part-title">The Teachings of Urs Qutbuddin Schellenberg</span>
+    </div>
+    <a href="#part-ii-ch-1" class="toc-chapter"><span class="toc-ch-num">1.</span><span class="toc-ch-title">Prayers &amp; Invocations</span><span class="toc-ch-dots"></span><span class="toc-ch-count">6 teachings</span></a>
+    <a href="#part-ii-ch-2" class="toc-chapter"><span class="toc-ch-num">2.</span><span class="toc-ch-title">Chivalric Rules &amp; Iron Rules</span><span class="toc-ch-dots"></span><span class="toc-ch-count">5 teachings</span></a>
+    <a href="#part-ii-ch-3" class="toc-chapter"><span class="toc-ch-num">3.</span><span class="toc-ch-title">Breath Practices</span><span class="toc-ch-dots"></span><span class="toc-ch-count">6 teachings</span></a>
+    <a href="#part-ii-ch-4" class="toc-chapter"><span class="toc-ch-num">4.</span><span class="toc-ch-title">Concentration, Visualization &amp; Meditation</span><span class="toc-ch-dots"></span><span class="toc-ch-count">20 teachings</span></a>
+    <a href="#part-ii-ch-5" class="toc-chapter"><span class="toc-ch-num">5.</span><span class="toc-ch-title">Fikr, Zikr &amp; Wazifa</span><span class="toc-ch-dots"></span><span class="toc-ch-count">4 teachings</span></a>
+    <a href="#part-ii-ch-6" class="toc-chapter"><span class="toc-ch-num">6.</span><span class="toc-ch-title">Movements, Rituals &amp; Techniques</span><span class="toc-ch-dots"></span><span class="toc-ch-count">3 teachings</span></a>
+    <a href="#part-ii-ch-7" class="toc-chapter"><span class="toc-ch-num">7.</span><span class="toc-ch-title">Teachings &amp; Wisdom</span><span class="toc-ch-dots"></span><span class="toc-ch-count">41 teachings</span></a>
+    <a href="#part-ii-ch-8" class="toc-chapter"><span class="toc-ch-num">8.</span><span class="toc-ch-title">Stories &amp; Parables</span><span class="toc-ch-dots"></span><span class="toc-ch-count">13 teachings</span></a>
+    <a href="#part-ii-ch-9" class="toc-chapter"><span class="toc-ch-num">9.</span><span class="toc-ch-title">Quotes, Sayings &amp; Poetry</span><span class="toc-ch-dots"></span><span class="toc-ch-count">10 teachings</span></a>
+    <a href="#part-ii-ch-10" class="toc-chapter"><span class="toc-ch-num">10.</span><span class="toc-ch-title">Deep Study &amp; Arabic Terms</span><span class="toc-ch-dots"></span><span class="toc-ch-count">14 teachings</span></a>
+  </div>
+
+  <div class="toc-part">
+    <div class="toc-part-header">
+      <span class="toc-part-label">Part III</span>
+      <span class="toc-part-title">Personal Transmissions by Guide Mansur</span>
+    </div>
+    <a href="#part-iii-ch-1" class="toc-chapter"><span class="toc-ch-num">1.</span><span class="toc-ch-title">Prayers &amp; Invocations</span><span class="toc-ch-dots"></span><span class="toc-ch-count">2 teachings</span></a>
+    <a href="#part-iii-ch-2" class="toc-chapter"><span class="toc-ch-num">2.</span><span class="toc-ch-title">Breath Practices</span><span class="toc-ch-dots"></span><span class="toc-ch-count">5 teachings</span></a>
+    <a href="#part-iii-ch-3" class="toc-chapter"><span class="toc-ch-num">3.</span><span class="toc-ch-title">Concentration, Visualization &amp; Meditation</span><span class="toc-ch-dots"></span><span class="toc-ch-count">3 teachings</span></a>
+    <a href="#part-iii-ch-4" class="toc-chapter"><span class="toc-ch-num">4.</span><span class="toc-ch-title">Fikr, Zikr &amp; Wazifa</span><span class="toc-ch-dots"></span><span class="toc-ch-count">9 teachings</span></a>
+    <a href="#part-iii-ch-5" class="toc-chapter"><span class="toc-ch-num">5.</span><span class="toc-ch-title">Teachings &amp; Wisdom</span><span class="toc-ch-dots"></span><span class="toc-ch-count">10 teachings</span></a>
+    <a href="#part-iii-ch-6" class="toc-chapter"><span class="toc-ch-num">6.</span><span class="toc-ch-title">Quotes, Sayings &amp; Poetry</span><span class="toc-ch-dots"></span><span class="toc-ch-count">3 teachings</span></a>
+    <a href="#part-iii-ch-7" class="toc-chapter"><span class="toc-ch-num">7.</span><span class="toc-ch-title">Deep Study &amp; Arabic Terms</span><span class="toc-ch-dots"></span><span class="toc-ch-count">3 teachings</span></a>
+  </div>
+
+  <div class="toc-back-matter">
+    <div class="toc-back-label">Back Matter</div>
+    <a href="#appendix-a" class="toc-appendix">Appendix A — Class Schedule</a>
+    <a href="#appendix-b" class="toc-appendix">Appendix B — Cross-Reference Index</a>
+    <a href="#appendix-c" class="toc-appendix">Appendix C — Practice Quick-Reference</a>
+    <a href="#colophon" class="toc-appendix">Appendix D — Colophon</a>
+  </div>
+
+  <div class="flower-ornament" style="margin-top: 30px;">✿</div>
 </section>
 <section id="introduction" class="intro-page">
   <h2 class="section-title">INTRODUCTION</h2>
