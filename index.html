@@ -844,6 +844,42 @@
       display: block;
     }
 
+    /* ─── Prayer Movements ─── */
+    .prayer-movements-grid {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      margin-top: 30px;
+    }
+    .prayer-movement-img {
+      width: 100%;
+      max-width: 900px;
+      margin: 0 auto;
+      display: block;
+      border: 1px solid #e8e4dc;
+      border-radius: 4px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    }
+    .prayer-section-label {
+      font-family: var(--display);
+      font-size: 22px;
+      font-weight: 600;
+      color: var(--indigo);
+      text-align: center;
+      margin: 40px 0 10px;
+      letter-spacing: 2px;
+    }
+    .prayer-section-label:first-of-type {
+      margin-top: 20px;
+    }
+    .prayer-note {
+      text-align: center;
+      font-style: italic;
+      color: var(--warm-gray);
+      font-size: 15px;
+      margin-bottom: 10px;
+    }
+
     /* ─── Appendix Sections ─── */
     .appendix-page {
       padding: 80px 0 60px;
@@ -1121,7 +1157,6 @@
         <div class="nav-front-links">
           <a href="#title-page">Title Page</a>
           <a href="#dedication">Dedication</a>
-          <a href="#lineage">The Lineage</a>
           <a href="#toc">Table of Contents</a>
           <a href="#introduction">Introduction</a>
         </div>
@@ -1289,6 +1324,7 @@
           <a href="#appendix-b">Appendix B — Cross-Reference Index</a>
           <a href="#appendix-c">Appendix C — Practice Quick-Reference</a>
           <a href="#colophon">Appendix D — Colophon</a>
+          <a href="#appendix-e">Appendix E — Prayer Movements</a>
         </div>
       </nav>
     </aside>
@@ -1314,7 +1350,6 @@
     <p class="title-mentor">Pod Mentor: Farzana</p>
     <div class="title-spacer-sm"></div>
     <p class="title-period">September – December 2025</p>
-    <img src="Images/inayatiyya_emblem_transparent.png" class="title-emblem" alt="Inayatiyya Emblem">
     <p class="title-stats">291 Teachings · 26 Chapters · 3 Parts · 20 Sessions</p>
   </div>
 </section>
@@ -1325,28 +1360,6 @@
     <p class="dedication-text">Dedicated to the lineage of teachers through whom the spirit of guidance has shone forth — Hazrat Inayat Khan, Pir Vilayat Inayat Khan, Pir Zia Inayat Khan — and to Mansur, whose guidance illuminates the personal path.</p>
     <p class="dedication-closing">Toward the One</p>
   </div>
-</section>
-<section id="lineage" class="lineage-page">
-  <h2 class="lineage-title">The Lineage</h2>
-  <div class="gold-rule"></div>
-  <div class="lineage-grid">
-    <div class="lineage-figure">
-      <img src="Images/hazrat_inayat_khan.JPG" class="lineage-photo" alt="Hazrat Inayat Khan">
-      <div class="lineage-name">Pir-o-Murshid Hazrat Inayat Khan</div>
-      <div class="lineage-desc">Founder of the Sufi Order (1882–1927)</div>
-    </div>
-    <div class="lineage-figure">
-      <img src="Images/pir_vilayat_khan.jpg" class="lineage-photo" alt="Pir Vilayat Khan">
-      <div class="lineage-name">Pir Vilayat Inayat Khan</div>
-      <div class="lineage-desc">Successor & Visionary (1916–2004)</div>
-    </div>
-    <div class="lineage-figure">
-      <img src="Images/pir_zia_inayat_khan.JPG" class="lineage-photo" alt="Pir Zia Inayat Khan">
-      <div class="lineage-name">Pir Zia Inayat Khan</div>
-      <div class="lineage-desc">Head of the Inayatiyya</div>
-    </div>
-  </div>
-  <div class="flower-ornament" style="margin-top: 40px;">✿</div>
 </section>
 <section id="toc" class="toc-page">
   <h2 class="section-title">TABLE OF CONTENTS</h2>
@@ -1405,6 +1418,7 @@
     <a href="#appendix-b" class="toc-appendix">Appendix B — Cross-Reference Index</a>
     <a href="#appendix-c" class="toc-appendix">Appendix C — Practice Quick-Reference</a>
     <a href="#colophon" class="toc-appendix">Appendix D — Colophon</a>
+    <a href="#appendix-e" class="toc-appendix">Appendix E — Prayer Movements</a>
   </div>
 
   <div class="flower-ornament" style="margin-top: 30px;">✿</div>
@@ -10079,6 +10093,27 @@
     </div>
   </div>
   <div class="flower-ornament">✿ ✿ ✿</div>
+</section>
+<section id="appendix-e" class="appendix-page">
+  <span class="appendix-label">Appendix E</span>
+  <h2 class="section-title">PRAYER MOVEMENTS</h2>
+  <div class="gold-rule"></div>
+  <p class="appendix-intro">The prayers of the Inayatiyya — Saum, Salat, and Salawat — are accompanied by sacred body movements that embody the meaning of each phrase. These diagrams, from <em>The Prayers of the Inayatiyya</em>, illustrate the postures for Saum and Salat as practiced in the Suluk Global program.</p>
+
+  <div class="prayer-movements-grid">
+    <h3 class="prayer-section-label">Saum — With Movements</h3>
+    <p class="prayer-note">Each posture corresponds to a line of the prayer</p>
+    <img src="Images/saum_movements_1.png" class="prayer-movement-img" alt="Saum with Movements — Page 1">
+    <img src="Images/saum_movements_2.png" class="prayer-movement-img" alt="Saum with Movements — Page 2">
+    <img src="Images/saum_movements_3.png" class="prayer-movement-img" alt="Saum with Movements — Page 3">
+
+    <h3 class="prayer-section-label">Salat — With Movements</h3>
+    <p class="prayer-note">Each posture corresponds to a line of the prayer</p>
+    <img src="Images/salat_movements_1.png" class="prayer-movement-img" alt="Salat with Movements — Page 1">
+    <img src="Images/salat_movements_2.png" class="prayer-movement-img" alt="Salat with Movements — Page 2">
+  </div>
+
+  <div class="flower-ornament" style="margin-top: 40px;">✿ ✿ ✿</div>
 </section>
 <section id="colophon" class="colophon-page">
   <span class="appendix-label">Appendix D</span>
