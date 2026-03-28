@@ -875,6 +875,57 @@
       border-radius: 4px;
       box-shadow: 0 2px 8px rgba(0,0,0,0.06);
     }
+    
+    /* Class Schedule Table */
+    .schedule-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 8px;
+      font-size: 15px;
+    }
+
+    .schedule-table th {
+      font-family: var(--display);
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--indigo);
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      border-bottom: 2px solid var(--gold);
+      padding: 8px 12px;
+      text-align: left;
+      background: rgba(196,163,90,0.06);
+    }
+
+    .schedule-table td {
+      padding: 7px 12px;
+      border-bottom: 1px solid var(--rule-color);
+      vertical-align: top;
+      color: var(--body-color);
+      line-height: 1.5;
+    }
+
+    .schedule-table tr:last-child td {
+      border-bottom: none;
+    }
+
+    .schedule-table .session-num {
+      font-weight: 600;
+      color: var(--gold);
+      white-space: nowrap;
+    }
+
+    .schedule-table .part-tag {
+      font-family: var(--display);
+      font-size: 12px;
+      font-weight: 700;
+      color: white;
+      background: var(--indigo);
+      padding: 1px 6px;
+      border-radius: 3px;
+      white-space: nowrap;
+      display: inline-block;
+    }
     </style>
 </head>
 <body>
@@ -1054,7 +1105,12 @@
       </div>
     </div>
         <div class="nav-front-links" style="border-top: 1px solid var(--rule-color); border-bottom: none; margin-top: 8px; padding-top: 12px;">
-          <a href="#colophon">Colophon</a>
+          <div style="font-family: var(--display); font-size: 11px; font-weight: 700; color: var(--gold); letter-spacing: 2px; text-transform: uppercase; padding: 4px 12px 6px; opacity: 0.8;">Back Matter</div>
+          <a href="#appendix-a">Appendix A — Class Schedule</a>
+          <a href="#appendix-b">Appendix B — Cross-Reference Index</a>
+          <a href="#appendix-c">Appendix C — Practice Quick-Reference</a>
+          <a href="#colophon">Appendix D — Colophon</a>
+          <a href="#appendix-e">Appendix E — Prayer Movements</a>
         </div>
       </nav>
     </aside>
@@ -9161,6 +9217,53 @@
     <div class="chapter-closing">✿ ✿ ✿</div>
   </div>
 </section>
+<section id="appendix-a" class="appendix-page">
+  <span class="appendix-label">Appendix A</span>
+  <h2 class="section-title">CLASS SCHEDULE</h2>
+  <div class="gold-rule"></div>
+  <p class="appendix-intro">The 20 Concentration sessions of the Suluk Global 2025-2027 program, organized across three teaching sections.</p>
+
+  <table class="schedule-table">
+    <thead>
+      <tr>
+        <th>Session</th>
+        <th>Date</th>
+        <th>Part</th>
+        <th>Instructor</th>
+        <th>Format</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td class="session-num">C1</td><td>Sep 12, 2025</td><td><span class="part-tag">Part I</span></td><td>Pir Zia Inayat Khan</td><td>Weekend 1, Day 1, Session 1</td></tr>
+      <tr><td class="session-num">C2</td><td>Sep 12, 2025</td><td><span class="part-tag">Part I</span></td><td>Pir Zia Inayat Khan</td><td>Weekend 1, Day 1, Session 2</td></tr>
+      <tr><td class="session-num">C3</td><td>Sep 13, 2025</td><td><span class="part-tag">Part I</span></td><td>Pir Zia Inayat Khan</td><td>Weekend 1, Day 2, Session 1</td></tr>
+      <tr><td class="session-num">C4</td><td>Sep 13, 2025</td><td><span class="part-tag">Part I</span></td><td>Pir Zia Inayat Khan</td><td>Weekend 1, Day 2, Session 2</td></tr>
+      <tr><td class="session-num">C5</td><td>Sep 14, 2025</td><td><span class="part-tag">Part I</span></td><td>Pir Zia Inayat Khan</td><td>Weekend 1, Day 3, Session 1</td></tr>
+      <tr><td class="session-num">C6</td><td>Sep 14, 2025</td><td><span class="part-tag">Part I</span></td><td>Pir Zia Inayat Khan</td><td>Weekend 1, Day 3, Session 2</td></tr>
+      <tr><td class="session-num">C7</td><td>Oct 11, 2025</td><td><span class="part-tag">Part I</span></td><td>Pir Zia Inayat Khan</td><td>Weekend 2, Day 1, Session 1</td></tr>
+      <tr><td class="session-num">C8</td><td>Oct 11, 2025</td><td><span class="part-tag">Part I</span></td><td>Pir Zia Inayat Khan</td><td>Weekend 2, Day 1, Session 2</td></tr>
+      <tr><td class="session-num">C9</td><td>Oct 12, 2025</td><td><span class="part-tag">Part I</span></td><td>Pir Zia Inayat Khan</td><td>Weekend 2, Day 2, Session 1</td></tr>
+      <tr><td class="session-num">C10</td><td>Oct 12, 2025</td><td><span class="part-tag">Part I</span></td><td>Pir Zia Inayat Khan</td><td>Weekend 2, Day 2, Session 2</td></tr>
+      <tr><td class="session-num">C11</td><td>Nov 21, 2025</td><td><span class="part-tag">Part II</span></td><td>Urs Qutbuddin Schellenberg</td><td>Weekend 3, Day 1, Session 1</td></tr>
+      <tr><td class="session-num">C12</td><td>Nov 21, 2025</td><td><span class="part-tag">Part II</span></td><td>Urs Qutbuddin Schellenberg</td><td>Weekend 3, Day 1, Session 2</td></tr>
+      <tr><td class="session-num">C13</td><td>Nov 22, 2025</td><td><span class="part-tag">Part II</span></td><td>Urs Qutbuddin Schellenberg</td><td>Weekend 3, Day 2, Session 1</td></tr>
+      <tr><td class="session-num">C14</td><td>Nov 22, 2025</td><td><span class="part-tag">Part II</span></td><td>Urs Qutbuddin Schellenberg</td><td>Weekend 3, Day 2, Session 2</td></tr>
+      <tr><td class="session-num">C15</td><td>Nov 23, 2025</td><td><span class="part-tag">Part II</span></td><td>Urs Qutbuddin Schellenberg</td><td>Weekend 3, Day 3, Session 1</td></tr>
+      <tr><td class="session-num">C16</td><td>Nov 23, 2025</td><td><span class="part-tag">Part II</span></td><td>Urs Qutbuddin Schellenberg</td><td>Weekend 3, Day 3, Session 2</td></tr>
+      <tr><td class="session-num">C17</td><td>Dec 13, 2025</td><td><span class="part-tag">Part II</span></td><td>Urs Qutbuddin Schellenberg</td><td>Weekend 4, Day 1, Session 1</td></tr>
+      <tr><td class="session-num">C18</td><td>Dec 13, 2025</td><td><span class="part-tag">Part II</span></td><td>Urs Qutbuddin Schellenberg</td><td>Weekend 4, Day 1, Session 2</td></tr>
+      <tr><td class="session-num">C19</td><td>Dec 14, 2025</td><td><span class="part-tag">Part II</span></td><td>Urs Qutbuddin Schellenberg</td><td>Weekend 4, Day 2, Session 1</td></tr>
+      <tr><td class="session-num">C20</td><td>Dec 14, 2025</td><td><span class="part-tag">Part II</span></td><td>Urs Qutbuddin Schellenberg</td><td>Weekend 4, Day 2, Session 2</td></tr>
+    </tbody>
+  </table>
+
+  <p style="margin-top: 20px; font-size: 14px; color: var(--warm-gray); font-style: italic;">
+    Part III (Guide Mansur) transmissions were woven throughout the program as personal guidance sessions.
+  </p>
+
+  <div class="flower-ornament" style="margin-top: 30px;">&#10047; &#10047; &#10047;</div>
+</section>
+
 <section id="appendix-b" class="appendix-page">
   <span class="appendix-label">Appendix B</span>
   <h2 class="section-title">CROSS-REFERENCE INDEX</h2>
